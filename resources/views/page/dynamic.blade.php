@@ -2,11 +2,8 @@
 <html>
     <head>
     </head>
-    <nav>
-    @foreach($navContent as $nav)
-    <a href="{!!$nav->navLink!!}">{!!nav-navName!!}</a>
-    @endforeach        
-    </nav>
+    @component('layouts.components.navbar')
+    @endcomponent
     <body>
         {!!$pageContent->pageContent!!}
     </body>
