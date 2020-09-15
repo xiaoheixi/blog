@@ -36,9 +36,10 @@ class ProductController extends Controller
         $product->save();   
         return redirect('/pr');
     }
-    public function show($id)
+    public function show($productName)
     {
-        //
+        $product = DB::table('products')->where('productName',$productName)->first();
+        return view('page.dynamic', ['product' => $product]);
     }
     public function edit($productName)
     {

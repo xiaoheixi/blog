@@ -4,6 +4,8 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use App\Nav;
+use App\sideNav;
+use App\Product;
 
 
 
@@ -27,7 +29,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $navContent = Nav::all();
-        view()->share('navContent', $navContent); 
-
+        view()->share('navContent', $navContent);
+        $sideNavContent = sideNav::all();
+        view()->share('sideNavContent', $sideNavContent);
+        $product = Product::all();
+        view()->share('product', $product);
     }
 }

@@ -21,7 +21,7 @@ class PageController extends Controller
     {
         $data = request()->validate([
             'title'            =>  'required',
-            'URI'              =>  'required|min:5|max:10|',
+            'URI'              =>  'required|min:4|max:10|',
             'pageContent'      =>  'required',
         ]);
         $page = new Page([
@@ -34,8 +34,9 @@ class PageController extends Controller
     }
     public function show($URI)
     {
-        $pageContent = DB::table('pages')->where('URI',$URI)->first();
-        return view('page.dynamic', ['pageContent' => $pageContent]);
+            $pageContent = DB::table('pages')->where('URI',$URI)->first();
+            return view('page.dynamic', ['pageContent' => $pageContent]);
+        
     }
     public function edit($URI)
     {
@@ -46,7 +47,7 @@ class PageController extends Controller
     {
         $data = $request->validate([
             'title' => 'required',
-            'URI' => 'required|min:5|max:10|exists:pages,URI',
+            'URI' => 'required|min:4|max:10|exists:pages,URI',
             'pageContent' => 'required'
         ]);
         $obj = \App\Page::where('URI', $request->URI)
