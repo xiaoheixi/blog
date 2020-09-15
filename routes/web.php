@@ -32,3 +32,4 @@ Route::get('/createNav', 'NavController@create');
 Route::post('/storeNav', 'NavController@store');
 Route::patch('/nav/{navName}', 'NavController@update');
 Route::delete('/nav/{navName}', 'NavController@destroy');
+Route::get('/nav/{navName}/edit', 'NavController@edit');

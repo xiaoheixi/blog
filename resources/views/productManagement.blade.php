@@ -13,6 +13,7 @@
     <th>Image</th>
     <th>Link</th>
     <th>Price</th>
+    <th>Description</th>
     <th></th>
     <th></th>
   </tr>
@@ -22,6 +23,7 @@
     <td><img src="/images/{{ $product->productImage }}" class="img-thumbnail" width="75" />{{$product->productImage}}</td>
     <td>{{$product->productLink}}</td>
     <td>{{$product->productPrice}}</td>
+    <td>{{$product->productDescription}}</td>
     <td><a href="/product/{{ $product->productName }}/edit">Modify</a></td>
     <td><form action="/product/{{ $product->productName }}" method="post">
     @csrf

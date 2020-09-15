@@ -20,6 +20,9 @@
   <label for="productPrice">Product Price:</label><br>
   <input type="decimal" id="productPrice" name="productPrice" autocomplete="off" value="{{ old('productPrice') }}"><br>
   @error('productPrice') <p style="color: red">{{ $message }}</p> @enderror
+  <label for="productDescription">Product Description:</label><br>
+  <input type="text" id="productDescription" name="productDescription" autocomplete="off" value="{{ old('productDescription') }}"><br>
+  @error('productDescription') <p style="color: red">{{ $message }}</p> @enderror
   <input type="submit" value="Submit">
 </form>
 </body>

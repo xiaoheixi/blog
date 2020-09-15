@@ -24,12 +24,14 @@ class ProductController extends Controller
             'productImage'              =>  'required',
             'productLink'      =>  'required',
             'productPrice'      =>  'required',
+            'productDescription'      =>  'required',
         ]);
         $product = new Product([
             'productName'            =>    $request->get('productName'),
             'productImage'              =>    $request->get('productImage'),
             'productLink'      =>    $request->get('productLink'),
             'productPrice'      =>  $request->get('productPrice'),
+            'productDescription'      =>  $request->get('productDescription'),
         ]);
         $product->save();   
         return redirect('/pr');
@@ -49,13 +51,15 @@ class ProductController extends Controller
             'productName' => 'required|exists:products,productName',
             'productImage' => 'required',
             'productLink' => 'required',
-            'productPrice' => 'required'
+            'productPrice' => 'required',
+            'productDescription' => 'required'
         ]);
         $obj = \App\Product::where('productName', $request->productName)
             ->update([
                 'productImage' => $request->productImage,
                 'productLink' => $request->productLink,
-                'productPrice' => $request->productPrice
+                'productPrice' => $request->productPrice,
+                'productDescription' => $request->productDescription
            ]);
         return redirect('/pr');
     }

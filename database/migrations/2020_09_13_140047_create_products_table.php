@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->binary('productImage');
             $table->string('productLink');
             $table->decimal('productPrice');
+            $table->string('productDescription');
             $table->timestamps();
         });
     }

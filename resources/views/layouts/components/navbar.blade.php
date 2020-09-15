@@ -1,7 +1,16 @@
-<nav>
-    @slot('$navContent')
-    @foreach($navContent as $nav)
-    <a href="{!!$nav->navLink!!}">{!!nav-navName!!}</a>
-    @endforeach
-    @endslot        
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Marketing 4 Growth</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            @foreach($navContent as $nav)
+                <li class="nav-item">
+                    <a class="nav-link" href="{!!$nav->navLink!!}">{!!$nav->navName!!}</a>
+                </li>
+            @endforeach
+        </ul>
+    </div>
 </nav>
