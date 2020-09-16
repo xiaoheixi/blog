@@ -3,7 +3,7 @@
         <h3>Products</h3>
         <div class="row">
             <div class="col-md-3">
-                <div class="card" style="width:400px">
+                <div class="card">
                     @foreach($product as $products)
                         <img class="card-img-top" src="/images/{{ $products->productImage }}" alt="Card image">
                         <div class="card-body">
