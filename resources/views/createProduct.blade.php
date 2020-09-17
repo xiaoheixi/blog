@@ -6,7 +6,7 @@
 <body>
 
 <h1>Fill in the form to add a product below.</h1>
-<form action="/storeProduct" method="post">
+<form action="/storeProduct" method="post" enctype='multipart/form-data'>
 @csrf
   <label for="productName">Product Name:</label><br>
   <input type="text" id="productName" name="productName" autocomplete="off" value="{{ old('productName') }}"><br>

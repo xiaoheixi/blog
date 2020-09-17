@@ -19,21 +19,29 @@ class ProductController extends Controller
     }
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'productImage' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        if ($request->hasFile('productImage')) {
+            $image = $request->file('productImage');
+            $name = time().'.'.$image->getClientOriginalExtension();
+            $destinationPath = public_path('/images');
+            $image->move($destinationPath, $name);
+            $this->save();
+        }
         $data = request()->validate([
             'productName'            =>  'required',
-            'productImage'              =>  'required',
             'productLink'      =>  'required',
             'productPrice'      =>  'required',
-            'productDescription'      =>  'required',
+            'productDescription'      =>  'required'
         ]);
         $product = new Product([
             'productName'            =>    $request->get('productName'),
-            'productImage'              =>    $request->get('productImage'),
             'productLink'      =>    $request->get('productLink'),
             'productPrice'      =>  $request->get('productPrice'),
-            'productDescription'      =>  $request->get('productDescription'),
+            'productDescription'      =>  $request->get('productDescription')
         ]);
-        $product->save();   
+        $product->save();
         return redirect('/pr');
     }
     public function show($productName)

@@ -9,8 +9,7 @@ use App\Product;
 use App\contactDetails;
 use App\services;
 use App\news;
-
-
+use App\footer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -43,5 +42,7 @@ class AppServiceProvider extends ServiceProvider
         view()->share('serviceContent', $serviceContent);
         $newsContent = news::all();
         view()->share('newsContent', $newsContent);
+        $footerContent = footer::all();
+        view()->share('footerContent', $footerContent);
     }
 }

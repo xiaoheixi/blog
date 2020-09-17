@@ -6,7 +6,7 @@
 <body>
 
 <h1>Fill in the form to edit a product below.</h1>
-<form action="/product/{{ $product->productName }}" method="post">
+<form action="/product/{{ $product->productName }}" method="post" enctype='multipart/form-data'>
 @csrf
 @method('PATCH')
   <label for="productName">Product Name:</label><br>

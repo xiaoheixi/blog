@@ -493,6 +493,7 @@ class ComposerStaticInitb15777ccd71533fd08cbf2f4bd958eac
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\CarouselController' => __DIR__ . '/../..' . '/app/Http/Controllers/CarouselController.php',
         'App\\Http\\Controllers\\ContactDetailsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactDetailsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\NavController' => __DIR__ . '/../..' . '/app/Http/Controllers/NavController.php',
@@ -520,6 +521,7 @@ class ComposerStaticInitb15777ccd71533fd08cbf2f4bd958eac
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\carousel' => __DIR__ . '/../..' . '/app/carousel.php',
         'App\\contactDetails' => __DIR__ . '/../..' . '/app/contactDetails.php',
+        'App\\footer' => __DIR__ . '/../..' . '/app/footer.php',
         'App\\news' => __DIR__ . '/../..' . '/app/news.php',
         'App\\services' => __DIR__ . '/../..' . '/app/services.php',
         'App\\sideNav' => __DIR__ . '/../..' . '/app/sideNav.php',

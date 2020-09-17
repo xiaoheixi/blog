@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\CarouselController' => $baseDir . '/app/Http/Controllers/CarouselController.php',
     'App\\Http\\Controllers\\ContactDetailsController' => $baseDir . '/app/Http/Controllers/ContactDetailsController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\NavController' => $baseDir . '/app/Http/Controllers/NavController.php',
@@ -35,6 +36,7 @@ return array(
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\carousel' => $baseDir . '/app/carousel.php',
     'App\\contactDetails' => $baseDir . '/app/contactDetails.php',
+    'App\\footer' => $baseDir . '/app/footer.php',
     'App\\news' => $baseDir . '/app/news.php',
     'App\\services' => $baseDir . '/app/services.php',
     'App\\sideNav' => $baseDir . '/app/sideNav.php',

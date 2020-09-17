@@ -31,7 +31,6 @@
         @component('layouts.components.contact')
         @endcomponent
     </body>
-    <footer class="footer-bottom">
-        <p class="text-center">&copy; All content copyright 2020 | Privacy Statement </p>
-    </footer>
+    @component('layouts.components.footer')
+    @endcomponent
 </html>
