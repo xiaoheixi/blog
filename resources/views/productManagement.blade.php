@@ -14,16 +14,18 @@
     <th>Link</th>
     <th>Price</th>
     <th>Description</th>
+    <th>Type</th>
     <th></th>
     <th></th>
   </tr>
 @foreach($products as $product)
 <tr>
     <td>{{$product->productName}}</a></td>
-    <td><img src="/images/{{ $product->productImage }}" class="img-thumbnail" width="75" />{{$product->productImage}}</td>
+    <td><img src="{{ $product->productImage }}" class="img-thumbnail" width="75" />{{$product->productImage}}</td>
     <td>{{$product->productLink}}</td>
     <td>{{$product->productPrice}}</td>
     <td>{{$product->productDescription}}</td>
+    <td>{{$product->productType}}</td>
     <td><a href="/product/{{ $product->productName }}/edit">Modify</a></td>
     <td><form action="/product/{{ $product->productName }}" method="post">
     @csrf

@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('productLink');
             $table->decimal('productPrice');
             $table->string('productDescription');
+            $table->string('productType');
             $table->timestamps();
         });
     }

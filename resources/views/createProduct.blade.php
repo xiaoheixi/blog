@@ -23,6 +23,13 @@
   <label for="productDescription">Product Description:</label><br>
   <input type="text" id="productDescription" name="productDescription" autocomplete="off" value="{{ old('productDescription') }}"><br>
   @error('productDescription') <p style="color: red">{{ $message }}</p> @enderror
+  <input type="radio" id="Audio" name="productType" value="Audio">
+  <label for="Audio">Audio</label><br>
+  <input type="radio" id="Book" name="productType" value="Book">
+  <label for="Book">Book</label><br>
+  <input type="radio" id="Video" name="productType" value="Video">
+  <label for="Video">Video</label><br>
+  @error('productType') <p style="color: red">{{ $message }}</p> @enderror
   <input type="submit" value="Submit">
 </form>
 </body>

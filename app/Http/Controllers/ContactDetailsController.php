@@ -25,7 +25,7 @@ class ContactDetailsController extends Controller
             'contactOffice'            =>  'required',
             'contactPostal'              =>  'required',
             'contactAddress'            =>  'required',
-            'contactEmail'              =>  'required',
+            'contactEmail'              =>  'required|email',
         ]);
         $contactDetail = new contactDetails([
             'contactName'            =>    $request->get('contactName'),
@@ -54,7 +54,7 @@ class ContactDetailsController extends Controller
             'contactOffice' =>  'required',
             'contactPostal' =>  'required',
             'contactAddress' =>  'required',
-            'contactEmail' =>  'required',
+            'contactEmail' =>  'required|email',
         ]);
         $obj = \App\contactDetails::where('contactName', $request->contactName)
             ->update([

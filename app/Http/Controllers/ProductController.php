@@ -19,28 +19,28 @@ class ProductController extends Controller
     }
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'productImage' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-        if ($request->hasFile('productImage')) {
-            $image = $request->file('productImage');
-            $name = time().'.'.$image->getClientOriginalExtension();
-            $destinationPath = public_path('/images');
-            $image->move($destinationPath, $name);
-            $this->save();
-        }
         $data = request()->validate([
             'productName'            =>  'required',
+            'productImage' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'productLink'      =>  'required',
             'productPrice'      =>  'required',
-            'productDescription'      =>  'required'
+            'productDescription'      =>  'required',
+            'productType' => 'required'
         ]);
+        $image_file = $request->file('productImage');
+        $image_path = $image_file->storeAs('images', time().'.'.$image_file->getClientOriginalExtension(), 'local');
+        $destinationPath = public_path('/images');
+        $name = time().'.'.$image_file->getClientOriginalExtension();
+        $image_file->move($destinationPath, $name);
         $product = new Product([
             'productName'            =>    $request->get('productName'),
+            'productImage' => $image_path,
             'productLink'      =>    $request->get('productLink'),
             'productPrice'      =>  $request->get('productPrice'),
-            'productDescription'      =>  $request->get('productDescription')
+            'productDescription'      =>  $request->get('productDescription'),
+            'productType' => $request->get('productType')
         ]);
+        
         $product->save();
         return redirect('/pr');
     }
@@ -61,14 +61,21 @@ class ProductController extends Controller
             'productImage' => 'required',
             'productLink' => 'required',
             'productPrice' => 'required',
-            'productDescription' => 'required'
+            'productDescription' => 'required',
+            'productType' => 'required'
         ]);
+        $image_file = $request->file('productImage');
+        $image_path = $image_file->storeAs('images', time().'.'.$image_file->getClientOriginalExtension(), 'local');
+        $destinationPath = public_path('/images');
+        $name = time().'.'.$image_file->getClientOriginalExtension();
+        $image_file->move($destinationPath, $name);
         $obj = \App\Product::where('productName', $request->productName)
             ->update([
-                'productImage' => $request->productImage,
+                'productImage' => $image_path,
                 'productLink' => $request->productLink,
                 'productPrice' => $request->productPrice,
-                'productDescription' => $request->productDescription
+                'productDescription' => $request->productDescription,
+                'productType' => $request->productType
            ]);
         return redirect('/pr');
     }
