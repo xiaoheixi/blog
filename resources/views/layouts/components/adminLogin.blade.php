@@ -1,4 +1,4 @@
-<form action="/authenticate">
+<form action="/authenticate" method="post">
   @csrf
   <label for="email">Email:</label><br>
   <input type="text" id="email" name="email"><br>

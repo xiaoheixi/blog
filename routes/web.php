@@ -74,5 +74,6 @@ Route::post('/storeAdmin', 'UsersController@store');
 Route::patch('/admin/{name}', 'UsersController@update');
 Route::delete('/admin/{name}', 'UsersController@destroy');
 Route::get('/admin/{name}/edit', 'UsersController@edit');
-Route::get('/authenticate', 'UsersController@authenticate');
+Route::post('/authenticate', 'UsersController@checklogin');
 Route::get('/loginAdmin', 'UsersController@login');
+Route::post('/sendemail/send', 'SendEmailController@send');

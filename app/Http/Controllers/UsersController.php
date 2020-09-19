@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Validator;
+use Auth;
 use Illuminate\Http\Request;
 use DB;
 use Illuminate\Database\MySqlConnection;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
 
 class UsersController extends Controller
 {
@@ -29,7 +32,7 @@ class UsersController extends Controller
         $adminContent = new User([
             'name'            =>    $request->get('name'),
             'email'            =>    $request->get('email'),
-            'password'              =>    $request->get('password'),
+            'password'              =>    Hash::make($request->get('password'))
         ]);
         $adminContent->save();
         return redirect('/a');
@@ -55,7 +58,7 @@ class UsersController extends Controller
             ->update([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => $request->password
+                'password' => Hash::make($request->password)
            ]);
         return redirect('/a');
     }
@@ -75,7 +78,26 @@ class UsersController extends Controller
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            return redirect()->intended('/a');
+            return redirect()->to('/a');
+        }
+    }
+    public function checklogin(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required|email',
+            'password' => 'required|alphaNum|min:3'
+        ]);
+        $user_data = array(
+            'email' => $request->get('email'),
+            'password' => $request->get('password'),
+        );
+        if(Auth::attempt($user_data))
+        {
+            return redirect()->to('/a');
+        }
+        else
+        {
+            return back();
         }
     }
 }

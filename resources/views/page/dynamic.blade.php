@@ -7,11 +7,31 @@
     @component('layouts.components.navbar')
     @endcomponent
     <body>
+        @if ($pageContent->URI == 'shop')
+            @component('layouts.components.sidenavbar')
+            @endcomponent
+        @endif
+        @if ($pageContent->URI == 'videos')
+            @component('layouts.components.sidenavbar')
+            @endcomponent
+        @endif
+        @if ($pageContent->URI == 'audio')
+            @component('layouts.components.sidenavbar')
+            @endcomponent
+        @endif
+        @if ($pageContent->URI == 'books')
+            @component('layouts.components.sidenavbar')
+            @endcomponent
+        @endif
         @if ($pageContent->URI == 'home')
             @component('layouts.components.carousel')
             @endcomponent
         @endif
         {!!$pageContent->pageContent!!}
+        @if ($pageContent->URI == 'sendemail')
+            @component('layouts.components.send_email')
+            @endcomponent
+        @endif
         @if ($pageContent->URI == 'adminLogin')
             @component('layouts.components.adminLogin')
             @endcomponent
