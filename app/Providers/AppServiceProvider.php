@@ -12,6 +12,8 @@ use App\news;
 use App\footer;
 use App\carousel;
 use App\User;
+use App\radioShow;
+use App\transactions;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -56,5 +58,9 @@ class AppServiceProvider extends ServiceProvider
         view()->share('videos', $videos);
         $adminContent = User::all();
         view()->share('adminContent, $adminContent');
+        $radioContent = radioShow::all();
+        view()->share('radioContent', $radioContent);
+        $transactionContent = transactions::all();
+        view()->share('transactionContent', $transactionContent);
     }
 }

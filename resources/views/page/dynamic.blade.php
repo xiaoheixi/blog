@@ -27,7 +27,17 @@
             @component('layouts.components.carousel')
             @endcomponent
         @endif
+        @if ($pageContent->URI == 'home')
+            @component('layouts.components.radioShow')
+            @endcomponent
+        @endif
         {!!$pageContent->pageContent!!}
+        @if ($pageContent->URI == 'checkOut')
+            @component('layouts.components.checkout')
+            @endcomponent
+            @component('layouts.components.cart')
+            @endcomponent
+        @endif
         @if ($pageContent->URI == 'sendemail')
             @component('layouts.components.send_email')
             @endcomponent
