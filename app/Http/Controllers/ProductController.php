@@ -1,17 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Product;
 use Image;
-use DB;
 class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::all();
-        return view('productManagement', compact('products'));
+        $productContent = Product::all();
+        return view('productManagement', compact('productContent'));
     }
     public function create()
     {
@@ -20,68 +21,67 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $data = request()->validate([
-            'productName'            =>  'required',
-            'productImage' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'productLink'      =>  'required',
-            'productPrice'      =>  'required',
-            'productDescription'      =>  'required',
-            'productType' => 'required'
+            'name'            =>  'required',
+            'description' => 'required',
+            'price' => 'required',
+            'cover_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'type' => 'required',
+            'productLink' => 'required'
         ]);
-        $image_file = $request->file('productImage');
+        $image_file = $request->file('cover_img');
         $image_path = $image_file->storeAs('images', time().'.'.$image_file->getClientOriginalExtension(), 'local');
         $destinationPath = public_path('/images');
         $name = time().'.'.$image_file->getClientOriginalExtension();
         $image_file->move($destinationPath, $name);
-        $product = new Product([
-            'productName'            =>    $request->get('productName'),
-            'productImage' => $image_path,
-            'productLink'      =>    $request->get('productLink'),
-            'productPrice'      =>  $request->get('productPrice'),
-            'productDescription'      =>  $request->get('productDescription'),
-            'productType' => $request->get('productType')
+        $productContent = new Product([
+            'name'            =>    $request->get('name'),
+            'description' => $request->get('description'),
+            'price' => $request->get('price'),
+            'cover_img' => $image_path,
+            'type' => $request->get('type'),
+            'productLink' => $request->get('productLink')
         ]);
-        
-        $product->save();
+        $productContent->save();
         return redirect('/pr');
     }
-    public function show($productName)
+    public function show($name)
     {
-        $product = DB::table('products')->where('productName',$productName)->first();
-        return view('page.dynamic', ['product' => $product]);
+        $productContent = DB::table('products')->where('name',$name)->first();
+        return view('page.dynamic', ['productContent' => $productContent]);
     }
-    public function edit($productName)
+    public function edit($name)
     {
-        $product = DB::table('products')->where('productName',$productName)->first();
-        return view('editProduct', ['product' => $product]);
+        $productContent = DB::table('products')->where('name',$name)->first();
+        return view('editProduct', ['productContent' => $productContent]);
     }
     public function update(Request $request)
     {
         $data = $request->validate([
-            'productName' => 'required|exists:products,productName',
-            'productImage' => 'required',
-            'productLink' => 'required',
-            'productPrice' => 'required',
-            'productDescription' => 'required',
-            'productType' => 'required'
+            'name' => 'required|exists:products,name',
+            'description' => 'required',
+            'price' => 'required',
+            'cover_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'type' => 'required',
+            'productLink' => 'required'
         ]);
-        $image_file = $request->file('productImage');
+        $image_file = $request->file('cover_img');
         $image_path = $image_file->storeAs('images', time().'.'.$image_file->getClientOriginalExtension(), 'local');
         $destinationPath = public_path('/images');
         $name = time().'.'.$image_file->getClientOriginalExtension();
         $image_file->move($destinationPath, $name);
-        $obj = \App\Product::where('productName', $request->productName)
+        $obj = \App\Product::where('name', $request->name)
             ->update([
-                'productImage' => $image_path,
-                'productLink' => $request->productLink,
-                'productPrice' => $request->productPrice,
-                'productDescription' => $request->productDescription,
-                'productType' => $request->productType
+                'description' => $request->get('description'),
+                'price' => $request->get('price'),
+                'cover_img' => $image_path,
+                'type' => $request->get('type'),
+                'productLink' => $request->get('productLink')
            ]);
         return redirect('/pr');
     }
     public function destroy(Request $request)
     {
-        $obj = \App\Product::where('productName', $request->productName)
+        $obj = \App\Product::where('name', $request->name)
         ->delete();
         return redirect('/pr');
     }

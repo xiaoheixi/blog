@@ -32,10 +32,12 @@
             @endcomponent
         @endif
         {!!$pageContent->pageContent!!}
+        @if ($pageContent->URI == 'cart')
+            @component('layouts.components.cart')
+            @endcomponent
+        @endif
         @if ($pageContent->URI == 'checkOut')
             @component('layouts.components.checkout')
-            @endcomponent
-            @component('layouts.components.cart')
             @endcomponent
         @endif
         @if ($pageContent->URI == 'sendemail')

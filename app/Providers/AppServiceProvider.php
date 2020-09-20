@@ -13,7 +13,6 @@ use App\footer;
 use App\carousel;
 use App\User;
 use App\radioShow;
-use App\transactions;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -38,8 +37,6 @@ class AppServiceProvider extends ServiceProvider
         view()->share('navContent', $navContent);
         $sideNavContent = sideNav::all();
         view()->share('sideNavContent', $sideNavContent);
-        $product = Product::all();
-        view()->share('product', $product);
         $contactDetail = contactDetails::all();
         view()->share('contactDetail', $contactDetail);
         $serviceContent = services::all();
@@ -60,7 +57,9 @@ class AppServiceProvider extends ServiceProvider
         view()->share('adminContent, $adminContent');
         $radioContent = radioShow::all();
         view()->share('radioContent', $radioContent);
-        $transactionContent = transactions::all();
-        view()->share('transactionContent', $transactionContent);
+        $allProducts = Product::all();
+        view()->share('allProducts', $allProducts);
+        $productContent = Product::all();
+        view()->share('productContent', $productContent);
     }
 }

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Page;
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\MySqlConnection;
 class PageController extends Controller
 {
@@ -36,7 +36,7 @@ class PageController extends Controller
     {
             $pageContent = DB::table('pages')->where('URI',$URI)->first();
             return view('page.dynamic', ['pageContent' => $pageContent]);
-        
+
     }
     public function edit($URI)
     {

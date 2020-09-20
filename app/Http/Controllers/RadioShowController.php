@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\radioShow;
-use DB;
 class RadioShowController extends Controller
 {
     public function index()
@@ -32,7 +32,7 @@ class RadioShowController extends Controller
             'fileName'            =>    $request->get('fileName'),
             'file' => $image_path,
         ]);
-        
+
         $radioContent->save();
         return redirect('/r');
     }

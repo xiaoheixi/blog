@@ -14,9 +14,10 @@ class SendEmailController extends Controller
             'email' => 'required|email',
             'message' => 'required'
         ]);
+        $obj = \App\Product::where('name', $request->name);
         $data = array(
             'name' => $request->name,
-            'message' => $request->message
+            'message' => $request->message,
         );
         Mail::to('aleksanderhowell@gmail.com')->send(new SendMail($data));
         return back()->with('success', 'Thanks for contacting us!');

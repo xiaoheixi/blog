@@ -1,17 +1,23 @@
 <p>Your Cart</p>
 <table style="width:100%">
   <tr>
-    <th>Product</th>
+    <th>Name</th>
     <th>Price</th>
     <th>Quantity</th>
-    <th>Total</th>
+    <th>Action</th>
   </tr>
-  $cartItems = {{ \Cart::getContent() }}
-  @foreach($cartItems as $item)
+  @foreach(\Cart::getContent() as $item)
     <tr>
-      <td>{{ $item->name }}</td>
-      <td>{{ $item->price}}</td>
-      <td>{{ $item->quantity }}</td>
+        <td>{{ $item->name }}</td>
+        <td>
+            ${{Cart::get($item->id)->getpriceSum()}}
+        </td>
+      <form action ="{{route('cart.update', $item->id)}}">
+      <td><input name="quantity" type="number" value = "{{ $item->quantity }}"><input type="submit" value="update"></td>
+      </form>
+      <td><a href="{{ route('cart.destroy', $item->id)}}">Delete</a>
     </tr>
   @endforeach
 </table>
+<h3>Total Price : ${{\Cart::getTotal()}}</h3>
+<a name="" id="" class="btn btn-primary" href="{{ route('cart.checkout') }}" role="button">Proceed to checkout</a>

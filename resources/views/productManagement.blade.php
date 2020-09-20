@@ -10,24 +10,24 @@
 <table style="width:100%">
   <tr>
     <th>Name</th>
-    <th>Image</th>
-    <th>Link</th>
-    <th>Price</th>
     <th>Description</th>
+    <th>Price</th>
+    <th>Image</th>
     <th>Type</th>
+    <th>Link</th>
     <th></th>
     <th></th>
   </tr>
-@foreach($products as $product)
+@foreach($productContent as $product)
 <tr>
-    <td>{{$product->productName}}</a></td>
-    <td><img src="{{ $product->productImage }}" class="img-thumbnail" width="75" />{{$product->productImage}}</td>
+    <td>{{$product->name}}</a></td>
+    <td>{{$product->description}}</td>
+    <td>{{$product->price}}</td>
+    <td><img src="{{ $product->image }}" class="img-thumbnail" width="75" />{{$product->image}}</td>
+    <td>{{$product->type}}</td>
     <td>{{$product->productLink}}</td>
-    <td>{{$product->productPrice}}</td>
-    <td>{{$product->productDescription}}</td>
-    <td>{{$product->productType}}</td>
-    <td><a href="/product/{{ $product->productName }}/edit">Modify</a></td>
-    <td><form action="/product/{{ $product->productName }}" method="post">
+    <td><a href="/product/{{ $product->name }}/edit">Modify</a></td>
+    <td><form action="/product/{{ $product->name }}" method="post">
     @csrf
       @method('DELETE')
       <button>Delete</button>

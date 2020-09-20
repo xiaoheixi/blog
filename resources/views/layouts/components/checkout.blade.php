@@ -1,20 +1,14 @@
-<form action="/storeTransaction2" method="post">
-@csrf
-  <label for="firstName">First Name:</label><br>
-  <input type="text" id="firstName" name="firstName" autocomplete="off" value="{{ old('firstName') }}"><br>
-  @error('firstName') <p style="color: red">{{ $message }}</p> @enderror
-  <label for="lastName">Last Name:</label><br>
-  <input type="text" id="lastName" name="lastName" autocomplete="off" value="{{ old('lastName') }}"><br>
-  @error('lastName') <p style="color: red">{{ $message }}</p> @enderror
-  <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email" autocomplete="off" value="{{ old('email') }}"><br>
-  @error('email') <p style="color: red">{{ $message }}</p> @enderror
-  <input type="radio" id="PayPal" name="paymentMethod" value="PayPal">
-  <label for="PayPal">Paypal</label><br>
-  <input type="radio" id="Square" name="paymentMethod" value="Square">
-  <label for="Square">Square</label><br>
-  <input type="radio" id="Stripe" name="paymentMethod" value="Stripe">
-  <label for="Stripe">Stripe</label><br>
-  @error('paymentMethod') <p style="color: red">{{ $message }}</p> @enderror
-  <input type="submit" value="Submit">
+<form action="{{route('orders.store')}}" method="post">
+    @csrf
+    <label for="">Full Name</label><br>
+    <input type="text" id="" name="shipping_fullname" autocomplete="off" value="{{ old('shipping_fullname') }}"><br>
+    <label for="">Email:</label><br>
+    <input type="text" id="" name="shipping_email" autocomplete="off" value="{{ old('shipping_email') }}"><br>
+    <input type="radio" id="PayPal" name="payment_method" value="PayPal">
+    <label for="PayPal">PayPal</label><br>
+    <input type="radio" id="Square" name="payment_method" value="Square">
+    <label for="Square">Square</label><br>
+    <input type="radio" id="Stripe" name="payment_method" value="Stripe">
+    <label for="Stripe">Stripe</label><br>
+    <input type="submit" value="Purchase">
 </form>
