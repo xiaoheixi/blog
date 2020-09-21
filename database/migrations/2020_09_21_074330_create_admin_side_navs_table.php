@@ -15,6 +15,8 @@ class CreateAdminSideNavsTable extends Migration
     {
         Schema::create('admin_side_navs', function (Blueprint $table) {
             $table->id();
+            $table->string('adminSideNavName');
+            $table->string('adminSideNavLink');
             $table->timestamps();
         });
     }

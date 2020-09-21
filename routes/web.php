@@ -93,3 +93,9 @@ Route::get('paypal/checkout/{order}', 'PayPalController@getExpressCheckout')->na
 Route::get('paypal/checkout-success/{order}', 'PayPalController@getExpressCheckoutSuccess')->name('paypal.success');
 Route::get('paypal/checkout-cancel', 'PayPalController@cancelPage')->name('paypal.cancel');
 Route::get('/o', 'OrderController@index');
+Route::get('/asn', 'AdminSideNavController@index');
+Route::get('/createAdminSideNav', 'AdminSideNavController@create');
+Route::post('/storeAdminSideNav', 'AdminSideNavController@store');
+Route::patch('/adminSideNav/{adminSideNavName}', 'AdminSideNavController@update');
+Route::delete('/adminSideNav/{adminSideNavName}', 'AdminSideNavController@destroy');
+Route::get('/adminSideNav/{adminSideNavName}/edit', 'AdminSideNavController@edit');
