@@ -1,12 +1,10 @@
     .margin-top-20 {
-        margin-top: 20px;
+        margin-top: 90px;
         float: left;
     }
     
     .feature-img {
-        max-height: 200px;
     }
-    
     .footer-bottom {
         padding: 20px;
         margin-top: 20px;
@@ -18,3 +16,10 @@
         margin-top: -20px;
         background: green;
     }
+
+    h1 {
+        background-color: green;
+    }
+
+
+      
