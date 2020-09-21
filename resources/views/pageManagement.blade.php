@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <head>
 <title>Page Management</title>
 </head>
@@ -34,7 +33,7 @@
 <div class="button" style="height 100px; width:9%;"><br></br>
 
 
-  
+
 <a href="{{url('createPage')}}" class="btn btn-primary">Add Page</a>
 </div>
 <br></br>
@@ -61,7 +60,6 @@
 </table>
 
 </body>
-=======
     <head>
         <title>Page Management</title>
     </head>
@@ -93,5 +91,4 @@
             @endforeach
         </table>
     </body>
->>>>>>> 082eaf729f3b6085040db6fb1e4261ececdfd9c8
 </html>

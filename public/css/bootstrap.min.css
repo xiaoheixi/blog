@@ -97,7 +97,6 @@ button, input, optgroup, select, textarea {
 }
 button {
     overflow: visible
-    
 }
 button, select {
     text-transform: none
@@ -1120,7 +1119,7 @@ hr {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
-    color: black;
+    color: inherit
 }
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
     font-weight: 400;
@@ -1421,7 +1420,7 @@ pre code {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto
 }
 
 @media (min-width:768px) {

@@ -389,7 +389,6 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 2.5rem;
-  
 }
 
 h2, .h2 {
@@ -574,17 +573,22 @@ pre code {
   overflow-y: scroll;
 }
 
-
+.container {
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .button {
-
-  width: 9%;
- 
+  width: auto;
+  padding-right: 15px;
+  padding-left: 55px;
+  margin-right: auto;
   margin-left: auto;
 
 }
-
-
 
 @media (min-width: 576px) {
   .container {
@@ -592,15 +596,11 @@ pre code {
   }
 }
 
-@media (min-width: 768px ) {
+@media (min-width: 768px) {
   .container {
-    background-color: green; 
-    /** nav bar color for welcome page management **/
     max-width: 720px;
   }
 }
-
-
 
 @media (min-width: 992px) {
   .container {
@@ -642,7 +642,6 @@ nav .navbar-brand{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  color: red;
 }
 
 .row {
@@ -4017,8 +4016,6 @@ tbody.collapse.show {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
-
 }
 
 .navbar-brand {
