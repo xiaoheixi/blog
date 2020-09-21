@@ -4,8 +4,23 @@
 <title>Page Management</title>
 </head>
 <body>
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/bootstrap-4.0.0.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+
+
+<link rel="stylesheet" href="{{ asset('js/bootstrap-4.0.0.js') }}">
+<link rel="stylesheet" href="{{ asset('js/jquery-3.2.1.min.js') }}">
+<link rel="stylesheet" href="{{ asset('js/popper.min.js') }}">
+
+
+<script src="{{ asset('js/bootstrap-4.0.0.js') }}"></script>
+<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
@@ -15,12 +30,14 @@
 </div>
 </nav>
 <br>
-<div class="button">
-  <br></br>
+<div class="button" style="height 100px; width:9%;"><br></br>
+
+
+  
 <a href="{{url('createPage')}}" class="btn btn-primary">Add Page</a>
 </div>
-</div>
-
+<br></br>
+<br></br>
 <table >
   <tr>
     <th>Title</th>
