@@ -501,6 +501,7 @@ class ComposerStaticInitb15777ccd71533fd08cbf2f4bd958eac
     );
 
     public static $classMap = array (
+        'App\\AdminSideNav' => __DIR__ . '/../..' . '/app/AdminSideNav.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\CarouselController' => __DIR__ . '/../..' . '/app/Http/Controllers/CarouselController.php',
@@ -518,7 +519,6 @@ class ComposerStaticInitb15777ccd71533fd08cbf2f4bd958eac
         'App\\Http\\Controllers\\SendEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/SendEmailController.php',
         'App\\Http\\Controllers\\ServicesController' => __DIR__ . '/../..' . '/app/Http/Controllers/ServicesController.php',
         'App\\Http\\Controllers\\SideNavController' => __DIR__ . '/../..' . '/app/Http/Controllers/SideNavController.php',
-        'App\\Http\\Controllers\\TransactionsController' => __DIR__ . '/../..' . '/app/Http/Controllers/TransactionsController.php',
         'App\\Http\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsersController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -529,6 +529,7 @@ class ComposerStaticInitb15777ccd71533fd08cbf2f4bd958eac
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Mail\\OrderPaid' => __DIR__ . '/../..' . '/app/Mail/OrderPaid.php',
         'App\\Mail\\SendMail' => __DIR__ . '/../..' . '/app/Mail/SendMail.php',
         'App\\Nav' => __DIR__ . '/../..' . '/app/Nav.php',
         'App\\Order' => __DIR__ . '/../..' . '/app/Order.php',
@@ -547,7 +548,6 @@ class ComposerStaticInitb15777ccd71533fd08cbf2f4bd958eac
         'App\\radioShow' => __DIR__ . '/../..' . '/app/radioShow.php',
         'App\\services' => __DIR__ . '/../..' . '/app/services.php',
         'App\\sideNav' => __DIR__ . '/../..' . '/app/sideNav.php',
-        'App\\transactions' => __DIR__ . '/../..' . '/app/transactions.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',

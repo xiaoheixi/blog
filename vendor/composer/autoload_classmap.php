@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\AdminSideNav' => $baseDir . '/app/AdminSideNav.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\CarouselController' => $baseDir . '/app/Http/Controllers/CarouselController.php',
@@ -23,7 +24,6 @@ return array(
     'App\\Http\\Controllers\\SendEmailController' => $baseDir . '/app/Http/Controllers/SendEmailController.php',
     'App\\Http\\Controllers\\ServicesController' => $baseDir . '/app/Http/Controllers/ServicesController.php',
     'App\\Http\\Controllers\\SideNavController' => $baseDir . '/app/Http/Controllers/SideNavController.php',
-    'App\\Http\\Controllers\\TransactionsController' => $baseDir . '/app/Http/Controllers/TransactionsController.php',
     'App\\Http\\Controllers\\UsersController' => $baseDir . '/app/Http/Controllers/UsersController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
@@ -34,6 +34,7 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Mail\\OrderPaid' => $baseDir . '/app/Mail/OrderPaid.php',
     'App\\Mail\\SendMail' => $baseDir . '/app/Mail/SendMail.php',
     'App\\Nav' => $baseDir . '/app/Nav.php',
     'App\\Order' => $baseDir . '/app/Order.php',
@@ -52,7 +53,6 @@ return array(
     'App\\radioShow' => $baseDir . '/app/radioShow.php',
     'App\\services' => $baseDir . '/app/services.php',
     'App\\sideNav' => $baseDir . '/app/sideNav.php',
-    'App\\transactions' => $baseDir . '/app/transactions.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/CorsService.php',
