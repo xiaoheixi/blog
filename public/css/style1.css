@@ -1,0 +1,25 @@
+    .margin-top-20 {
+        margin-top: 90px;
+        float: left;
+    }
+    
+    .feature-img {
+    }
+    .footer-bottom {
+        padding: 20px;
+        margin-top: 20px;
+        background: green;
+    }
+    
+    .collapse {
+        padding: 20px;
+        margin-top: -20px;
+        background: green;
+    }
+
+    h1 {
+        background-color: green;
+    }
+
+
+      

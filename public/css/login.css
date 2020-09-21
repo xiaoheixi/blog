@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+    background-color: #D5D5D5;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #FFDD00;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #4CAF50;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.container{
+    padding-top: 180px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h2{
+    margin-top: 0;
+}
+
+form{
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-field:focus {
+    border: 2px solid blue;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 1;
+}

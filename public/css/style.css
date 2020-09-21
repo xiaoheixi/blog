@@ -1,25 +1,114 @@
-    .margin-top-20 {
-        margin-top: 90px;
-        float: left;
-    }
-    
-    .feature-img {
-    }
-    .footer-bottom {
-        padding: 20px;
-        margin-top: 20px;
-        background: green;
-    }
-    
-    .collapse {
-        padding: 20px;
-        margin-top: -20px;
-        background: green;
-    }
+@charset "utf-8";
+/* CSS Document */
+html{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+body { margin: 0; }
+img { width: 100%; }
+.vertical{
+    z-index: 1;
+    width: 260px;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    box-shadow: 0 2px 5px #888888;
+    overflow-x: auto;
+}
+.header {
+    width: 260px;
+    position: relative;
+    padding: 0 14px;
+    transition: .3s ease all;
+    cursor: pointer;
+    z-index: 3;
+}
+.header a{
+    margin-top: .75rem;
+    color: #0d9c4a;
+    text-decoration: none;
+}
+.header a:hover{
+    color: #0d9c4a;
+    text-decoration: none;
+}
+.sidenav {
+    margin-top: 30px;
+    left: 0;
+}
 
-    h1 {
-        background-color: green;
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000;
+    background-color: #ffdd00;
+}
+div.content{
+    margin-left: 260px;
+    padding: 1px 16px;
+    height: 100px;
+    margin-top: 20px;
+}
+.box{
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #888888;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+.pad-lr{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-field:focus {
+    border: 2px solid blue;
+}
+@media screen and (max-width: 700px) {
+    .vertical {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
+    .header a{float: left; width:100%;}
+    .sidenav{float: left; width:100%; text-align: center;}
+    div.content {margin-left: 0;}
+}
 
-
-      
+@media screen and (max-width: 400px) {
+    .vertical {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .header a{float: left; width:100%;}
+    .sidenav{float: left; width:100%; text-align: center;}
+    div.content {margin-left: 0;}
+}
+tr, td{
+    border: 1px solid black;
+    padding: 5px;
+}

@@ -12,9 +12,15 @@
 
 
 <h1>Welcome to Page Management</h1>
-<a href="{{url('createPage')}}" class="btn btn-primary">Add Page</a>
 </div>
 </nav>
+<br>
+<div class="button">
+  <br></br>
+<a href="{{url('createPage')}}" class="btn btn-primary">Add Page</a>
+</div>
+</div>
+
 <table >
   <tr>
     <th>Title</th>
