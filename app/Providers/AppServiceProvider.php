@@ -1,18 +1,19 @@
 <?php
 
 namespace App\Providers;
+use App\Nav;
+use App\news;
+use App\User;
+use App\footer;
+use App\Product;
+use App\sideNav;
+use App\carousel;
+use App\services;
+use App\radioShow;
+use App\AdminSideNav;
+use App\contactDetails;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use App\Nav;
-use App\sideNav;
-use App\Product;
-use App\contactDetails;
-use App\services;
-use App\news;
-use App\footer;
-use App\carousel;
-use App\User;
-use App\radioShow;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -37,6 +38,8 @@ class AppServiceProvider extends ServiceProvider
         view()->share('navContent', $navContent);
         $sideNavContent = sideNav::all();
         view()->share('sideNavContent', $sideNavContent);
+        $adminSideNavContent = AdminSideNav::all();
+        view()->share('adminSideNavContent', $adminSideNavContent);
         $contactDetail = contactDetails::all();
         view()->share('contactDetail', $contactDetail);
         $serviceContent = services::all();
