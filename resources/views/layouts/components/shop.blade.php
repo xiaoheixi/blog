@@ -1,6 +1,6 @@
 <div class="container text-center">
     <h3>Products</h3>
-    <a href="checkOut" class="btn btn-primary">Go to Checkout</a>
+    <a href="cart" class="btn btn-primary">Go to Cart</a>
     <div class="row">
         @foreach($allProducts as $product)
             <div class="col-4">

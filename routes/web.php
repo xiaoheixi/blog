@@ -99,3 +99,4 @@ Route::post('/storeAdminSideNav', 'AdminSideNavController@store');
 Route::patch('/adminSideNav/{adminSideNavName}', 'AdminSideNavController@update');
 Route::delete('/adminSideNav/{adminSideNavName}', 'AdminSideNavController@destroy');
 Route::get('/adminSideNav/{adminSideNavName}/edit', 'AdminSideNavController@edit');
+Route::view('/dashboard', 'dashboard');

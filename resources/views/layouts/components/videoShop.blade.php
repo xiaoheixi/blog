@@ -6,11 +6,11 @@
             <div class="col-md-3">
                 <div class="card">
                     @foreach($videos as $video)
-                        <img class="card-img-top" src="/{{ $video->productImage }}" alt="{{ $video->productImage }}">
+                        <img class="card-img-top" src="/{{ $video->cover_img }}" alt="{{ $video->cover_img }}">
                         <div class="card-body">
-                            <h4 class="card-title">{{$video->productName}}</h4>
-                            <p class="card-text">{{$video->productDescription}}</p>
-                            <a href="" class="btn btn-primary">Add to Cart</a>
+                            <h4 class="card-title">{{$video->name}}</h4>
+                            <p class="card-text">{{$video->description}}</p>
+                            <a href="{{ route('cart.add', $video->id) }}" class="btn btn-primary">Add to Cart</a>
                         </div>
                     @endforeach
                 </div>

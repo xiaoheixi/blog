@@ -38,7 +38,7 @@ class AdminSideNavController extends Controller
     public function edit($adminSideNavName)
     {
         $adminSideNavContent = DB::table('admin_side_navs')->where('adminSideNavName',$adminSideNavName)->first();
-        return view('adminEditSideNav', ['adminSideNavContent' => $adminSideNavContent]);
+        return view('editAdminSideNav', ['adminSideNavContent' => $adminSideNavContent]);
     }
     public function update(Request $request)
     {
