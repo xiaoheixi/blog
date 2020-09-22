@@ -25,7 +25,8 @@
             @csrf
             <div class="form-group">
                 <label for="title">Title:</label><br>
-                <input class="form-control input-lg" type="text" id="title" name="title" autocomplete="off" value="{{ old('title') }}"><br>
+                <input type="text" id="title" name="title" autocomplete="off"
+                    value="{{ old('title') }}"><br>
                 @error('title') <p style="color: red">{{ $message }}</p> @enderror
             </div>
             <div class="form-group">
@@ -45,9 +46,9 @@
             referrerpolicy="origin"></script>
         <script>
             tinymce.init({
-                selector: '#pageContent'
+                selector: '#pageContent',
+                body_class: 'my_class'
             })
-
         </script>
     </div>
 </body>

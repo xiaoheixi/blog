@@ -81,6 +81,27 @@ label {
     color: white;
 }
 
+.footer-bottom {
+    background-color: black;
+    color: white;
+}
+
+.footerLink {
+    color: yellow;
+}
+
+.contactDetails {
+    background-color: green;
+    color: white;
+    margin-bottom: 0rem;
+}
+
+p {
+    background-color: green;
+    color: white;
+    margin-bottom: 0rem;
+}
+
 
 /*
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
