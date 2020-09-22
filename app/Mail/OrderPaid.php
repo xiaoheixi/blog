@@ -7,6 +7,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use stdClass;
 
 class OrderPaid extends Mailable
 {
@@ -20,6 +21,7 @@ class OrderPaid extends Mailable
      */
     public function __construct(Order $order)
     {
+
         $this->order = $order;
     }
 

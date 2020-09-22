@@ -1,8 +1,88 @@
-<!DOCTYPE html>
-<html>
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: green;
+}
 
-<head>
-    <title>Edit a Carousel!</title>
+h1 {
+    font-size: 50px;
+    background-color: green;
+    color: white;
+}
+
+.card-body-admin-dashboard {
+    border: 5px solid white;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+
+.container-fluid {
+    background-color: green;
+}
+
+.flex-container {
+    display: flex;
+    background-color: green;
+}
+
+.nav {
+    background-color: black;
+}
+
+.nav-link {
+    color: white;
+}
+
+.createButton {
+    color: white;
+    background-color: green;
+    height: 25px;
+}
+
+th {
+    color: white;
+}
+
+.link {
+    color: white;
+}
+
+.deleteButton {
+    background-color: green;
+    color: white;
+}
+
+.modifyButton {
+    background-color: green;
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+table {
+    margin-left: 50px;
+}
+
+form {
+    background-color: green;
+}
+
+label {
+    color: white;
+}
+
+.pageTitle {
+    margin-bottom: 0rem;
+}
+
+.fileInput {
+    color: white;
+}
+
+
+/*
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,24 +96,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-</head>
-
-<body>
-
-    <h1 class="pageTitle">Fill in the form to edit a carousel below.</h1>
-    <form action="/carousel/{{ $carouselContent->carouselName }}" method="post" enctype='multipart/form-data'>
-        @csrf
-        @method('PATCH')
-        <label for="carouselName">Carousel Name:</label><br>
-        <input type="text" id="carouselName" name="carouselName" autocomplete="off"
-            value="{{ $carouselContent -> carouselName }}"><br>
-        @error('carouselName') <p style="color: red">{{ $message }}</p> @enderror
-        <label for="carouselImage">Carousel Image:</label><br>
-        <input type="file" id="carouselImage" name="carouselImage" autocomplete="off"
-            value="{{ $carouselContent -> carouselImage }}"><br>
-        @error('carouselImage') <p style="color: red">{{ $message }}</p> @enderror
-        <input class="btn btn-outline-warning" type="submit" value="Submit">
-    </form>
-</body>
-
-</html>
+*/

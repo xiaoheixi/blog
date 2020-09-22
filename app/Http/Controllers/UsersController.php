@@ -78,7 +78,7 @@ class UsersController extends Controller
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            return redirect()->to('/a');
+            return redirect()->to('/dashboard');
         }
     }
     public function checklogin(Request $request)
