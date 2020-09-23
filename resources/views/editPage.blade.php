@@ -16,6 +16,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+
 </head>
 
 <body>
@@ -31,7 +32,7 @@
         <input type="text" id="URI" name="URI" autocomplete="off" value="{{ $pageContent -> URI }}"><br>
         @error('URI') <p style="color: red">{{ $message }}</p> @enderror
         <label for="pageContent">Page Content:</label><br>
-        <textarea id="pageContent" name="pageContent" value="{{ $pageContent -> pageContent }}"></textarea>
+        <textarea id="pageContent" name="pageContent"></textarea>
         @error('pageContent') <p style="color: red">{{ $message }}</p> @enderror
         <input class="btn btn-outline-warning" type="submit" value="Submit">
     </form>
@@ -39,7 +40,9 @@
         referrerpolicy="origin"></script>
     <script>
         tinymce.init({
-            selector: '#pageContent'
+            selector: 'textarea#pageContent',
+            body_class: 'my_class',
+            inline: true
         })
 
     </script>

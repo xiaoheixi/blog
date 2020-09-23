@@ -18,6 +18,11 @@
     
     body {
         background-color: green;
+        color: white;
+    }
+    
+    .MsoNormal {
+        color: white;
     }
     
     .container-fluid {

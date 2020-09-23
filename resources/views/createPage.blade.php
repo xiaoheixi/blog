@@ -16,8 +16,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script type="text/javascript">
+    tinymce.init({
+      selector: '#pageContent',
+      body_class: 'my_class',
+      inline: true
+    });
+    </script>
 </head>
-
 <body>
     <div class="container-fluid">
         <h1 class="pageTitle">Fill in the form to add a page below.</h1>
@@ -25,8 +32,7 @@
             @csrf
             <div class="form-group">
                 <label for="title">Title:</label><br>
-                <input type="text" id="title" name="title" autocomplete="off"
-                    value="{{ old('title') }}"><br>
+                <input type="text" id="title" name="title" autocomplete="off" value="{{ old('title') }}"><br>
                 @error('title') <p style="color: red">{{ $message }}</p> @enderror
             </div>
             <div class="form-group">
@@ -36,20 +42,11 @@
             </div>
             <div class="form-group">
                 <label for="pageContent">Page Content:</label><br>
-                <textarea id="pageContent" name="pageContent" value="{{ old('pageContent') }}"></textarea>
+                <textarea id="pageContent" name="pageContent"></textarea>
                 @error('pageContent') <p style="color: red">{{ $message }}</p> @enderror
             </div>
             <button type="submit" class="btn btn-outline-warning">Submit</button>
         </form>
-
-        <script src="https://cdn.tiny.cloud/1/z3c5oj4u7s8ido8ma9c2wokkvw238dkqly5dlkpcy9m7gndn/tinymce/5/tinymce.min.js"
-            referrerpolicy="origin"></script>
-        <script>
-            tinymce.init({
-                selector: '#pageContent',
-                body_class: 'my_class'
-            })
-        </script>
     </div>
 </body>
 
