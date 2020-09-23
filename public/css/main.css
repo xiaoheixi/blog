@@ -86,6 +86,9 @@
     
     form {
         background-color: green;
+        position: static;
+        margin-left: 45%;
+        margin-top: 5%;
     }
     
     label {
@@ -155,12 +158,6 @@
         text-align: center;
     }
     
-    .adminLoginForm {
-        position: fixed;
-        left: 45%;
-        bottom: 50%;
-    }
-    
     .adminLoginLabel {
         text-align: left;
     }
@@ -195,7 +192,8 @@
     }
     
     html,
-    body {
+    body,
+    form {
         height: 100%;
     }
     
