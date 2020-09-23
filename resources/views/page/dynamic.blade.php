@@ -87,8 +87,9 @@
     @endif
     @component('layouts.components.contact')
     @endcomponent
+    @component('layouts.components.footer')
+    @endcomponent
+
 </body>
-@component('layouts.components.footer')
-@endcomponent
 
 </html>
