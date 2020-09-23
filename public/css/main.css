@@ -2,38 +2,38 @@
         font-family: 'Open Sans', sans-serif;
         background-color: green;
     }
-    
+
     h1 {
         font-size: 50px;
         background-color: green;
         color: white;
     }
-    
+
     .card-body-admin-dashboard {
         border: 5px solid white;
         width: 200px;
         height: 150px;
         color: white;
     }
-    
+
     body {
         background-color: green;
         color: white;
     }
-    
+
     .container-fluid {
         background-color: green;
     }
-    
+
     .flex-container {
         display: flex;
         background-color: green;
     }
-    
+
     .adminNav {
         background-color: black;
     }
-    
+
     .sidenav {
         display: flex;
         flex-wrap: wrap;
@@ -43,59 +43,59 @@
         background-color: green;
         flex-direction: column;
     }
-    
+
     .nav-link {
         color: white;
     }
-    
+
     .createButton {
         color: white;
         background-color: green;
         height: 25px;
     }
-    
+
     th {
         color: white;
     }
-    
+
     .link {
         color: white;
     }
-    
+
     .deleteButton {
         background-color: green;
         color: white;
     }
-    
+
     .modifyButton {
         background-color: green;
         color: white;
     }
-    
+
     td {
         color: white;
     }
-    
+
     table {
         margin-left: 50px;
     }
-    
+
     form {
         background-color: green;
     }
-    
+
     label {
         color: white;
     }
-    
+
     .pageTitle {
         margin-bottom: 0rem;
     }
-    
+
     .fileInput {
         color: white;
     }
-    
+
     .contactDetails {
         background-color: green;
         color: white;
@@ -103,15 +103,19 @@
         left: 5px;
         bottom: 40px;
         margin-bottom: 0rem;
-    
+
     }
-    
+
+    ul {
+        position: static;
+    }
+
     p {
         background-color: green;
         color: white;
         margin-bottom: 0rem;
     }
-    
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -120,66 +124,102 @@
         overflow: hidden;
         background-color: green;
     }
-    
+
     li {
         float: left;
     }
-    
+
     .navBarLinks {
         display: block;
         padding: 8px;
         background-color: green;
         color: white;
     }
-    
+
     .text-center {
         background-color: black;
     }
-    
+
     .footerLink {
         color: yellow;
     }
-    
+
     .footer-bottom {
         position: static;
         left: 0;
         bottom: 0;
         width: 100%;
         text-align: center;
+
+
     }
-    
+
     .adminLoginForm {
         position: fixed;
         left: 45%;
         bottom: 50%;
     }
-    
+
     .adminLoginLabel {
         text-align: left;
     }
-    
+
     .news-page {
         background-color: green;
     }
-    
+
     .card {
         background-color: green;
         width: 25%;
         flex-direction: row;
         color: white;
     }
-    
+
     .rowProduct {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-    
+
     .productImage {
         width: 65%;
         height: 45%;
     }
+
+
+
+    /** below code used for footer  **/
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+
+    }
+
+    #footer-container {
+        min-height: 50%;
+    }
+
+    #main {
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
+    .footer {
+
+        position: relative;
+        height: 100px;
+        margin-top: -100px;
+        clear: both;
+    }
+
+    /** above code used for footer  **/
     /*
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
