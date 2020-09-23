@@ -21,6 +21,7 @@
         tinymce.init({
             selector: '#pageContent',
             body_class: 'my_class',
+            content_css: '/css/main.css',
             inline: true
         });
 
