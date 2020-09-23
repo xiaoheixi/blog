@@ -165,12 +165,28 @@
         width: 25%;
         flex-direction: row;
         color: white;
-        height: 10%;
+
+
+    }
+
+
+
+
+    .rowProduct {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+
     }
 
     .productImage {
-        height: 2%
+        width: 65%;
+        height: 45%;
     }
+
+
     /*
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">

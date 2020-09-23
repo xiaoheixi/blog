@@ -5,7 +5,7 @@
             <div class="card-body">
                 <h4 class="card-title">{{ $service->serviceName }}</h4>
                 <p>{{ $service->serviceDescription}}</p>
-                <a href="{{ $service->serviceLink }}" class="btn btn-primary">Learn More</a>
+                <a href="{{ $service->serviceLink }}" class="btn btn-outline-warning">Learn More</a>
             </div>
         </div>
         @endforeach
