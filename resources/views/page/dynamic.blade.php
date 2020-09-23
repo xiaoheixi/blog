@@ -85,7 +85,7 @@
     @component('layouts.components.videoShop')
     @endcomponent
     @endif
-    @component('layouts.compot nents.footer')
+    @component('layouts.components.footer')
     @endcomponent
 
 </body>
