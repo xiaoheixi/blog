@@ -1,9 +1,8 @@
-<div class='container margin-top-20'>
-    <div class="row">
-        <div class="col-md-4">
-            @foreach($sideNavContent as $sideNav)
-                <a href="{!!$sideNav->sideNavLink!!}">{!!$sideNav->sideNavName!!}</a>
-            @endforeach
-        </div>
-    </div>        
-</div>
+<ul class="nav flex-column col-md-2">
+    @foreach($sideNavContent as $sideNav)
+    <li class="nav-item">
+        <a class="nav-link @if($loop->first) active @endif"
+            href="{!!$sideNav->sideNavLink!!}">{!!$sideNav->sideNavName!!}</a>
+    </li>
+    @endforeach
+</ul>

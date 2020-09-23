@@ -1,109 +1,177 @@
-html {
-    font-family: 'Open Sans', sans-serif;
-    background-color: green;
-}
+    html {
+        font-family: 'Open Sans', sans-serif;
+        background-color: green;
+    }
 
-h1 {
-    font-size: 50px;
-    background-color: green;
-    color: white;
-}
+    h1 {
+        font-size: 50px;
+        background-color: green;
+        color: white;
+    }
 
-.card-body-admin-dashboard {
-    border: 5px solid white;
-    width: 200px;
-    height: 150px;
-    color: white;
-}
+    .card-body-admin-dashboard {
+        border: 5px solid white;
+        width: 200px;
+        height: 150px;
+        color: white;
+    }
 
-.container-fluid {
-    background-color: green;
-}
+    body {
+        background-color: green;
+    }
 
-.flex-container {
-    display: flex;
-    background-color: green;
-}
+    .container-fluid {
+        background-color: green;
+    }
 
-.nav {
-    background-color: black;
-}
+    .flex-container {
+        display: flex;
+        background-color: green;
+    }
 
-.nav-link {
-    color: white;
-}
+    .adminNav {
+        background-color: black;
+    }
 
-.createButton {
-    color: white;
-    background-color: green;
-    height: 25px;
-}
+    .sidenav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        background-color: green;
+        flex-direction: column;
+    }
 
-th {
-    color: white;
-}
+    .nav-link {
+        color: white;
+    }
 
-.link {
-    color: white;
-}
+    .createButton {
+        color: white;
+        background-color: green;
+        height: 25px;
+    }
 
-.deleteButton {
-    background-color: green;
-    color: white;
-}
+    th {
+        color: white;
+    }
 
-.modifyButton {
-    background-color: green;
-    color: white;
-}
+    .link {
+        color: white;
+    }
 
-td {
-    color: white;
-}
+    .deleteButton {
+        background-color: green;
+        color: white;
+    }
 
-table {
-    margin-left: 50px;
-}
+    .modifyButton {
+        background-color: green;
+        color: white;
+    }
 
-form {
-    background-color: green;
-}
+    td {
+        color: white;
+    }
 
-label {
-    color: white;
-}
+    table {
+        margin-left: 50px;
+    }
 
-.pageTitle {
-    margin-bottom: 0rem;
-}
+    form {
+        background-color: green;
+    }
 
-.fileInput {
-    color: white;
-}
+    label {
+        color: white;
+    }
 
-.footer-bottom {
-    background-color: black;
-    color: white;
-}
+    .pageTitle {
+        margin-bottom: 0rem;
+    }
 
-.footerLink {
-    color: yellow;
-}
+    .fileInput {
+        color: white;
+    }
 
-.contactDetails {
-    background-color: green;
-    color: white;
-    margin-bottom: 0rem;
-}
+    .contactDetails {
+        background-color: green;
+        color: white;
+        position: fixed;
+        left: 5px;
+        bottom: 40px;
+        margin-bottom: 0rem;
+    }
 
-p {
-    background-color: green;
-    color: white;
-    margin-bottom: 0rem;
-}
+    p {
+        background-color: green;
+        color: white;
+        margin-bottom: 0rem;
+    }
 
+    ul {
+        list-style-type: none;
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+    }
 
-/*
+    li {
+        float: left;
+    }
+
+    .navBarLinks {
+        display: block;
+        padding: 8px;
+        background-color: green;
+        color: white;
+    }
+
+    .text-center {
+        background-color: black;
+    }
+
+    .footerLink {
+        color: yellow;
+    }
+
+    .footer-bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .adminLoginForm {
+        position: fixed;
+        left: 45%;
+        bottom: 50%;
+    }
+
+    .adminLoginLabel {
+        text-align: left;
+    }
+
+    .news-page {
+        background-color: green;
+    }
+
+    .card {
+        background-color: green;
+        width: 25%;
+        flex-direction: row;
+        color: white;
+        height: 10%;
+    }
+
+    .productImage {
+        height: 2%
+    }
+    /*
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
