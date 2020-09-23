@@ -18,13 +18,15 @@
     </script>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script type="text/javascript">
-    tinymce.init({
-      selector: '#pageContent',
-      body_class: 'my_class',
-      inline: true
-    });
+        tinymce.init({
+            selector: '#pageContent',
+            body_class: 'my_class',
+            inline: true
+        });
+
     </script>
 </head>
+
 <body>
     <div class="container-fluid">
         <h1 class="pageTitle">Fill in the form to add a page below.</h1>
@@ -42,7 +44,7 @@
             </div>
             <div class="form-group">
                 <label for="pageContent">Page Content:</label><br>
-                <textarea id="pageContent" name="pageContent"></textarea>
+                <div id="pageContent" name="pageContent">Click here to edit!</div>
                 @error('pageContent') <p style="color: red">{{ $message }}</p> @enderror
             </div>
             <button type="submit" class="btn btn-outline-warning">Submit</button>

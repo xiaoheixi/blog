@@ -16,7 +16,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: '#pageContent',
+            body_class: 'my_class',
+            inline: true
+        });
 
+    </script>
 </head>
 
 <body>
@@ -32,20 +40,10 @@
         <input type="text" id="URI" name="URI" autocomplete="off" value="{{ $pageContent -> URI }}"><br>
         @error('URI') <p style="color: red">{{ $message }}</p> @enderror
         <label for="pageContent">Page Content:</label><br>
-        <textarea id="pageContent" name="pageContent"></textarea>
+        <div id="pageContent" name="pageContent">Click here to edit!</div>
         @error('pageContent') <p style="color: red">{{ $message }}</p> @enderror
         <input class="btn btn-outline-warning" type="submit" value="Submit">
     </form>
-    <script src="https://cdn.tiny.cloud/1/z3c5oj4u7s8ido8ma9c2wokkvw238dkqly5dlkpcy9m7gndn/tinymce/5/tinymce.min.js"
-        referrerpolicy="origin"></script>
-    <script>
-        tinymce.init({
-            selector: 'textarea#pageContent',
-            body_class: 'my_class',
-            inline: true
-        })
-
-    </script>
 </body>
 
 </html>
