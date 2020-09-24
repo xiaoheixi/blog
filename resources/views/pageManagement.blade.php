@@ -38,7 +38,7 @@
                     <td><a class="link" href="/page/{{ $page->URI }}/edit"><button
                                 class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/page/{{ $page->URI }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/page/{{ $page->URI }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

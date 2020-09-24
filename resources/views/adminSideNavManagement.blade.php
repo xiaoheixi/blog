@@ -38,7 +38,7 @@
                     <td><a href="/adminSideNav/{{ $adminSideNav->adminSideNavName }}/edit"><button
                                 class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/adminSideNav/{{ $adminSideNav->adminSideNavName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/adminSideNav/{{ $adminSideNav->adminSideNavName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

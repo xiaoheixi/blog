@@ -40,7 +40,7 @@
                     <td><a href="/service/{{ $service->serviceName }}/edit"><button
                                 class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/service/{{ $service->serviceName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/service/{{ $service->serviceName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

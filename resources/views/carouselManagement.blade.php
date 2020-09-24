@@ -39,7 +39,7 @@
                     <td><a href="/carousel/{{ $carousel->carouselName }}/edit"><button
                                 class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/carousel/{{ $carousel->carouselName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/carousel/{{ $carousel->carouselName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

@@ -44,7 +44,7 @@
                     <td><a href="/contact/{{ $contact->contactName }}/edit"><button
                                 class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/contact/{{ $contact->contactName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/contact/{{ $contact->contactName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

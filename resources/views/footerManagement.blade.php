@@ -40,7 +40,7 @@
                     <td><a href="/footer/{{ $footer->footerName }}/edit"><button
                                 class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/footer/{{ $footer->footerName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/footer/{{ $footer->footerName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

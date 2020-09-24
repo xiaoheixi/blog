@@ -39,7 +39,7 @@
                     <td>{{$news->newsLink}}</td>
                     <td><a href="/news/{{ $news->newsName }}/edit"><button class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/news/{{ $news->newsName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/news/{{ $news->newsName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

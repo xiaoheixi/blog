@@ -37,7 +37,7 @@
                     <td>{{$nav->navLink}}</td>
                     <td><a href="/nav/{{ $nav->navName }}/edit"><button class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/nav/{{ $nav->navName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/nav/{{ $nav->navName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

@@ -43,7 +43,7 @@
                     <td><a href="/radio/{{ $radio->fileName }}/edit"><button class="modifyButton">Modify</button></a>
                     </td>
                     <td>
-                        <form action="/radio/{{ $radio->fileName }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/radio/{{ $radio->fileName }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

@@ -16,8 +16,10 @@
     </script>
     <link href="/css/main.css" rel="stylesheet">
 </head>
+@if($pageContent->URI != 'adminLogin')
 @component('layouts.components.navbar')
 @endcomponent
+@endif
 
 <body>
     @if ($pageContent->URI == 'shop')
@@ -85,9 +87,10 @@
     @component('layouts.components.videoShop')
     @endcomponent
     @endif
+    @if ($pageContent->URI != 'adminLogin')
     @component('layouts.components.footer')
     @endcomponent
-
+    @endif
 </body>
 
 </html>

@@ -39,7 +39,7 @@
                     <td>{{$admin->password}}</td>
                     <td><a href="/admin/{{ $admin->name }}/edit"><button class="modifyButton">Modify</button></a></td>
                     <td>
-                        <form action="/admin/{{ $admin->name }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/admin/{{ $admin->name }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>

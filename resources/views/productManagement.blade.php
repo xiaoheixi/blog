@@ -47,7 +47,7 @@
                     <td><a href="/product/{{ $product->name }}/edit"><button class="modifyButton">Modify</button></a>
                     </td>
                     <td>
-                        <form action="/product/{{ $product->name }}" method="post">
+                        <form class="formDeleteButtonAdminPanel" action="/product/{{ $product->name }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="deleteButton">Delete</button>
