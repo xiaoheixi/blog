@@ -48,6 +48,11 @@
         flex-direction: column;
     }
     
+    .sideNavItem {
+        border-style: solid;
+        width: 90px;
+    }
+    
     .nav-link {
         color: white;
     }

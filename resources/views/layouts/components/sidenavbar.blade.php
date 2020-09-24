@@ -1,10 +1,10 @@
 
        <ul class="nav flex-column col-md-2">
 
-    
+
     @foreach($sideNavContent as $sideNav)
 
-    <li class="nav-item">
+    <li class="sideNavItem">
 
 
         <a class="nav-link @if($loop->first) active @endif"
