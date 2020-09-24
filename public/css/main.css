@@ -71,7 +71,17 @@
         color: white;
     }
     
+    .deleteCartButton {
+        background-color: green;
+        color: white;
+    }
+    
     .modifyButton {
+        background-color: green;
+        color: white;
+    }
+    
+    .updateCartButton {
         background-color: green;
         color: white;
     }
@@ -240,8 +250,6 @@
         margin-top: -100px;
         clear: both;
     }
-
-
 
 **/
     /*
