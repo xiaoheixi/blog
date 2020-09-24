@@ -103,3 +103,4 @@ Route::view('/dashboard', 'dashboard')->middleware('auth');
 Route::redirect('login', '/page/adminLogin')->name('login');
 Route::get('stripe', 'StripeController@index');
 Route::post('store', 'StripeController@store');
+Route::get('logout', 'UsersController@logout')->name('logout');

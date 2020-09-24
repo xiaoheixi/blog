@@ -102,4 +102,8 @@ class UsersController extends Controller
             return back();
         }
     }
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/page/adminLogin');
+      }
 }
