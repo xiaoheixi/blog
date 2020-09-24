@@ -108,6 +108,126 @@
         ]
     },
     {
+        "name": "cartalyst/stripe",
+        "version": "v2.4.2",
+        "version_normalized": "2.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cartalyst/stripe.git",
+            "reference": "c6ee8fc4b1881e5688fab728523b5fdd10d0a3bf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cartalyst/stripe/zipball/c6ee8fc4b1881e5688fab728523b5fdd10d0a3bf",
+            "reference": "c6ee8fc4b1881e5688fab728523b5fdd10d0a3bf",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/guzzle": "~6.0|~7.0",
+            "php": ">=5.5.9"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9",
+            "phpunit/phpunit": "~4.8"
+        },
+        "time": "2020-07-26T14:59:01+00:00",
+        "type": "library",
+        "extra": {
+            "component": "package",
+            "branch-alias": {
+                "dev-master": "2.4.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cartalyst\\Stripe\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Cartalyst LLC",
+                "email": "help@cartalyst.com",
+                "homepage": "https://cartalyst.com"
+            }
+        ],
+        "description": "A comprehensive Stripe API package.",
+        "keywords": [
+            "cartalyst",
+            "php",
+            "stripe"
+        ]
+    },
+    {
+        "name": "cartalyst/stripe-laravel",
+        "version": "v12.0.0",
+        "version_normalized": "12.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cartalyst/stripe-laravel.git",
+            "reference": "e171e6721e3491daa7eaa8d85ca6d4536086c327"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cartalyst/stripe-laravel/zipball/e171e6721e3491daa7eaa8d85ca6d4536086c327",
+            "reference": "e171e6721e3491daa7eaa8d85ca6d4536086c327",
+            "shasum": ""
+        },
+        "require": {
+            "cartalyst/stripe": "^2.0",
+            "illuminate/support": "^7.0",
+            "php": "^7.2.5"
+        },
+        "require-dev": {
+            "cartalyst/php-cs-fixer-config": "^1.0",
+            "phpunit/phpunit": "^8.0"
+        },
+        "time": "2020-03-03T18:50:48+00:00",
+        "type": "library",
+        "extra": {
+            "component": "implementation",
+            "branch-alias": {
+                "dev-master": "12.0.x-dev"
+            },
+            "laravel": {
+                "providers": [
+                    "Cartalyst\\Stripe\\Laravel\\StripeServiceProvider"
+                ],
+                "aliases": {
+                    "Stripe": "Cartalyst\\Stripe\\Laravel\\Facades\\Stripe"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cartalyst\\Stripe\\Laravel\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Cartalyst LLC",
+                "email": "help@cartalyst.com",
+                "homepage": "https://cartalyst.com"
+            }
+        ],
+        "description": "Laravel 7 integration for the Cartalyst Stripe package.",
+        "keywords": [
+            "cartalyst",
+            "laravel",
+            "php",
+            "stripe"
+        ]
+    },
+    {
         "name": "darryldecode/cart",
         "version": "4.2.0",
         "version_normalized": "4.2.0.0",
@@ -4383,6 +4503,65 @@
             "paypal",
             "rest",
             "web service"
+        ]
+    },
+    {
+        "name": "stripe/stripe-php",
+        "version": "v7.54.0",
+        "version_normalized": "7.54.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stripe/stripe-php.git",
+            "reference": "3a5cff6ce6f5f2f0fc75164d3677bd5dc3e96fe3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stripe/stripe-php/zipball/3a5cff6ce6f5f2f0fc75164d3677bd5dc3e96fe3",
+            "reference": "3a5cff6ce6f5f2f0fc75164d3677bd5dc3e96fe3",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-json": "*",
+            "ext-mbstring": "*",
+            "php": ">=5.6.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "2.16.1",
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpunit": "^5.7",
+            "squizlabs/php_codesniffer": "^3.3",
+            "symfony/process": "~3.4"
+        },
+        "time": "2020-09-23T21:48:00+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Stripe\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stripe and contributors",
+                "homepage": "https://github.com/stripe/stripe-php/contributors"
+            }
+        ],
+        "description": "Stripe PHP Library",
+        "homepage": "https://stripe.com/",
+        "keywords": [
+            "api",
+            "payment processing",
+            "stripe"
         ]
     },
     {

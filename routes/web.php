@@ -101,3 +101,5 @@ Route::delete('/adminSideNav/{adminSideNavName}', 'AdminSideNavController@destro
 Route::get('/adminSideNav/{adminSideNavName}/edit', 'AdminSideNavController@edit')->middleware('auth');
 Route::view('/dashboard', 'dashboard')->middleware('auth');
 Route::redirect('login', '/page/adminLogin')->name('login');
+Route::get('stripe', 'StripeController@index');
+Route::post('store', 'StripeController@store');

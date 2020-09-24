@@ -113,6 +113,11 @@
         margin-top: 0;
     }
     
+    .navBarLogo {
+        width: 100px;
+        height: 100px;
+    }
+    
     label {
         color: white;
     }
@@ -159,7 +164,7 @@
     
     .navBarLinks {
         display: block;
-        padding: 8px;
+        padding: 5px;
         background-color: green;
         color: white;
     }

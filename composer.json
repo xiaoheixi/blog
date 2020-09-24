@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "cartalyst/stripe-laravel": "^12.0",
         "darryldecode/cart": "^4.2",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -16,7 +17,8 @@
         "intervention/image": "^2.5",
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
-        "srmklive/paypal": "~1.0"
+        "srmklive/paypal": "~1.0",
+        "stripe/stripe-php": "^7.54"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
