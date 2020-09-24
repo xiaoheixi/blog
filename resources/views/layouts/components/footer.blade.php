@@ -3,7 +3,7 @@
 
 </div>
 
-<p class="contactDetails"> 
+<p class="contactDetails">
     @foreach($contactDetail as $con)
     {{$con->contactName}} <br>
     Office: {{$con->contactOffice}} <br>
@@ -17,4 +17,3 @@
             {{$footer -> footerName}}</a> </p>
 </footer>
 @endforeach
-
