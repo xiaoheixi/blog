@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Validator;
-use Auth;
+
 use Illuminate\Http\Request;
-use DB;
-use Illuminate\Database\MySqlConnection;
+
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\MySqlConnection;
 
 
 class UsersController extends Controller
@@ -97,7 +99,7 @@ class UsersController extends Controller
         }
         else
         {
-            return back();
+            return redirect()->to('/page/adminLogin');
         }
     }
 }
