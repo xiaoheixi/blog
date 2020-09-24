@@ -16,77 +16,79 @@
     </script>
     <link href="/css/main.css" rel="stylesheet">
 </head>
-@if($pageContent->URI != 'adminLogin')
-@component('layouts.components.navbar')
-@endcomponent
-@endif
 
 <body>
-    @if ($pageContent->URI == 'shop')
-    @component('layouts.components.sidenavbar')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'videos')
-    @component('layouts.components.sidenavbar')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'audio')
-    @component('layouts.components.sidenavbar')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'books')
-    @component('layouts.components.sidenavbar')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'home')
-    @component('layouts.components.carousel')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'home')
-    @component('layouts.components.radioShow')
-    @endcomponent
-    @endif
-    {!!$pageContent->pageContent!!}
-    @if ($pageContent->URI == 'cart')
-    @component('layouts.components.cart')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'checkOut')
-    @component('layouts.components.checkout')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'sendemail')
-    @component('layouts.components.send_email')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'adminLogin')
-    @component('layouts.components.adminLogin')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'service')
-    @component('layouts.components.service')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'news')
-    @component('layouts.components.news')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'shop')
-    @component('layouts.components.shop')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'audio')
-    @component('layouts.components.audioShop')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'books')
-    @component('layouts.components.bookShop')
-    @endcomponent
-    @endif
-    @if ($pageContent->URI == 'videos')
-    @component('layouts.components.videoShop')
-    @endcomponent
-    @endif
+    <div class="wrapper">
+        @if($pageContent->URI != 'adminLogin')
+        @component('layouts.components.navbar')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'shop')
+        @component('layouts.components.sidenavbar')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'videos')
+        @component('layouts.components.sidenavbar')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'audio')
+        @component('layouts.components.sidenavbar')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'books')
+        @component('layouts.components.sidenavbar')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'home')
+        @component('layouts.components.carousel')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'home')
+        @component('layouts.components.radioShow')
+        @endcomponent
+        @endif
+        {!!$pageContent->pageContent!!}
+        @if ($pageContent->URI == 'cart')
+        @component('layouts.components.cart')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'checkOut')
+        @component('layouts.components.checkout')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'sendemail')
+        @component('layouts.components.send_email')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'adminLogin')
+        @component('layouts.components.adminLogin')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'service')
+        @component('layouts.components.service')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'news')
+        @component('layouts.components.news')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'shop')
+        @component('layouts.components.shop')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'audio')
+        @component('layouts.components.audioShop')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'books')
+        @component('layouts.components.bookShop')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'videos')
+        @component('layouts.components.videoShop')
+        @endcomponent
+        @endif
+    </div>
     @if ($pageContent->URI != 'adminLogin')
     @component('layouts.components.footer')
     @endcomponent

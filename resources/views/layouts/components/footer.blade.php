@@ -1,8 +1,4 @@
 @foreach ($footerContent as $footer)
-<div id="footer-container">
-
-</div>
-
 <p class="contactDetails">
     @foreach($contactDetail as $con)
     {{$con->contactName}} <br>
