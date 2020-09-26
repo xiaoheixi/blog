@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             @foreach ($newsContent as $news)
-            <div class="card">
+            <div class="card col-md-12">
                 <div class="card-body">
                     <h4 class="card-title">{{ $news->newsName }}</h4>
                     <p>{{ $news->newsDescription}}</p>

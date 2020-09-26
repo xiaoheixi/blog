@@ -24,7 +24,7 @@
         <div class="row">
         @component('layouts.components.adminSideNavBar')
         @endcomponent
-            <table class="table table-bordered" style="width:74%">
+            <table class="table table-bordered" style="width:76%">
                 <tr>
                     <th>Footer Name</th>
                     <th>Footer Text</th>
@@ -50,7 +50,7 @@
                 @endforeach
             </table>
             <a class="createButton" href="{{url('createFooter')}}" class="btn btn-primary"><button
-                    class="createButton">Add Footer</button></a>
+                    class="createButton">Add New</button></a>
         </div>
     </div>
 </body>

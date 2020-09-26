@@ -16,15 +16,15 @@
 @endif
 <form class="sendEmailForm" method="post" action="{{ url('sendemail/send') }}">
     {{ csrf_field() }}
-    <div class="form-group">
+    <div class="form-groupNameAndEmail">
         <label>Enter Your Name</label>
         <input type="text" name="name" class=" form-control" />
     </div>
-    <div class="form-group">
+    <div class="form-groupNameAndEmail">
         <label>Enter Your Email</label>
         <input type="text" name="email" class="form-control" />
     </div>
-    <div class="form-group">
+    <div class="form-groupMessage">
         <label>Enter Your Message</label>
         <textarea name="message" class="form-control"></textarea>
     </div>

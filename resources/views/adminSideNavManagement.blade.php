@@ -24,7 +24,7 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="table table-bordered" style="width:62%">
+            <table class="table table-bordered" style="width:76%">
                 <tr>
                     <th>Admin Side Navigation Bar Option Name</th>
                     <th>Admin Side Navigation Bar Option Link</th>
@@ -48,7 +48,7 @@
                 @endforeach
             </table>
             <a class="createButton" href="{{url('createAdminSideNav')}}" class="btn btn-primary"><button
-                    class="createButton">Add Admin Side Navigation Bar Option</button></a>
+                    class="createButton">Add New</button></a>
         </div>
     </div>
 </body>

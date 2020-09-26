@@ -24,32 +24,33 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="table table-bordered" style="width:68%">
-                <tr>
-                    <th>Admin Name</th>
-                    <th>Admin Email</th>
-                    <th>Admin Password</th>
-                    <th>Modify</th>
-                    <th>Delete</th>
-                </tr>
-                @foreach($adminContent as $admin)
-                <tr>
-                    <td>{{$admin->name}}</td>
-                    <td>{{$admin->email}}</td>
-                    <td>{{$admin->password}}</td>
-                    <td><a href="/admin/{{ $admin->name }}/edit"><button class="modifyButton">Modify</button></a></td>
-                    <td>
-                        <form class="formDeleteButtonAdminPanel" action="/admin/{{ $admin->name }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button class="deleteButton">Delete</button>
-                        </form>
-                    </td>
-                </tr>
-                @endforeach
-            </table>
-            <a class="createButton" href="{{url('createAdmin')}}" class="btn btn-primary"><button
-                    class="createButton">Add Administrator Detail</button></a>
+                <table class="table table-bordered" style="width:76%">
+                    <tr>
+                        <th>Admin Name</th>
+                        <th>Admin Email</th>
+                        <th>Admin Password</th>
+                        <th>Modify</th>
+                        <th>Delete</th>
+                    </tr>
+                    @foreach($adminContent as $admin)
+                    <tr>
+                        <td>{{$admin->name}}</td>
+                        <td>{{$admin->email}}</td>
+                        <td>{{$admin->password}}</td>
+                        <td><a href="/admin/{{ $admin->name }}/edit"><button class="modifyButton">Modify</button></a>
+                        </td>
+                        <td>
+                            <form class="formDeleteButtonAdminPanel" action="/admin/{{ $admin->name }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button class="deleteButton">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </table>
+                <a class="createButton" href="{{url('createAdmin')}}" class="btn btn-primary"><button
+                    class="createButton">Add New</button></a>
         </div>
     </div>
 </body>

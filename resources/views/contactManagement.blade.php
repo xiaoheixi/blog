@@ -24,7 +24,7 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="table table-bordered" style="width:71%">
+            <table class="table table-bordered" style="width:75%">
                 <tr>
                     <th>Contact Name</th>
                     <th>Contact Office</th>
@@ -55,7 +55,7 @@
             </table>
             <a class="createButton" href="{{url('createContact')}}" class="btn btn-primary"><button
                     class="createButton">Add
-                    Contact Detail</button></a>
+                    New</button></a>
         </div>
     </div>
 </body>

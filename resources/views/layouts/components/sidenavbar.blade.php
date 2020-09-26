@@ -1,5 +1,5 @@
 
-       <ul class="nav flex-column col-md-2">
+       <ul class="sideNav flex-column col-md-2">
 
 
     @foreach($sideNavContent as $sideNav)

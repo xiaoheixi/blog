@@ -23,6 +23,15 @@
         @component('layouts.components.navbar')
         @endcomponent
         @endif
+        @if ($pageContent->URI == 'home')
+        @component('layouts.components.carousel')
+        @endcomponent
+        @endif
+        @if ($pageContent->URI == 'home')
+        @component('layouts.components.radioShow')
+        @endcomponent
+        @endif
+        {!!$pageContent->pageContent!!}
         @if ($pageContent->URI == 'shop')
         @component('layouts.components.sidenavbar')
         @endcomponent
@@ -39,15 +48,6 @@
         @component('layouts.components.sidenavbar')
         @endcomponent
         @endif
-        @if ($pageContent->URI == 'home')
-        @component('layouts.components.carousel')
-        @endcomponent
-        @endif
-        @if ($pageContent->URI == 'home')
-        @component('layouts.components.radioShow')
-        @endcomponent
-        @endif
-        {!!$pageContent->pageContent!!}
         @if ($pageContent->URI == 'cart')
         @component('layouts.components.cart')
         @endcomponent

@@ -24,7 +24,7 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="table table-bordered" style="width:74%">
+            <table class="table table-bordered" style="width:76%">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
@@ -50,7 +50,7 @@
                 @endforeach
             </table>
             <a class="createButton" href="{{url('createService')}}" class="btn btn-primary"><button
-                    class="createButton">Add Service</button></a>
+                    class="createButton">Add New</button></a>
         </div>
     </div>
 </body>

@@ -1,4 +1,4 @@
-<form action="{{route('orders.store')}}" method="post">
+<form action="{{route('orders.store')}}" method="post" class="checkOutForm">
     @csrf
     <label for="">Full Name</label><br>
     <input type="text" id="" name="shipping_fullname" autocomplete="off" value="{{ old('shipping_fullname') }}"><br>
@@ -12,7 +12,7 @@
     <label for="Stripe">Stripe</label><br>
     <input type="submit" value="Purchase">
 </form>
-<div class="container">
+<!--<div class="container">
     <div class="row">
     <div class="col-md-12"><pre id="token_response"></pre></div>
     </div>
@@ -73,3 +73,4 @@
     }
 
 </script>
+-->

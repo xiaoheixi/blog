@@ -7,7 +7,7 @@
     <div class="carousel-inner">
         @foreach($carouselContent->take(3) as $carousel)
             <div class="text-center carousel-item @if($loop->first) active @endif">
-                <img class="d-block w-100 max-auto img-fluid" src="/{{$carousel->carouselImage}}" alt="{{$carousel->carouselName}}">
+                <img class="d-block imageHeight w-100 max-auto img-fluid" src="/{{$carousel->carouselImage}}" alt="{{$carousel->carouselName}}">
             </div>
         @endforeach
     </div>

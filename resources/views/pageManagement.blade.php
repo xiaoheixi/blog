@@ -48,7 +48,7 @@
                 @endforeach
             </table>
             <a class="createButton" href="{{url('createPage')}}" class="btn btn-primary"><button
-                    class="createButton">Add Page</button></a>
+                    class="createButton">Add New</button></a>
         </div>
     </div>
 </body>
