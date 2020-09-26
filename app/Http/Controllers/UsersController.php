@@ -95,7 +95,7 @@ class UsersController extends Controller
         );
         if(Auth::attempt($user_data))
         {
-            return redirect()->to('/a');
+            return redirect()->to('/dashboard');
         }
         else
         {
