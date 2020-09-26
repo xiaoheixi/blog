@@ -2,20 +2,20 @@
         font-family: 'Open Sans', sans-serif;
         background-color: #0D9C4A;
     }
-
+    
     h1 {
         font-size: 50px;
         background-color: #0D9C4A;
         color: #000000;
     }
-
+    
     .card-body-admin-dashboard {
         border: 5px solid #000000;
         width: 200px;
         height: 160px;
         color: #000000;
     }
-
+    
     body {
         background-color: white !important;
         color: #000000 !important;
@@ -24,28 +24,24 @@
         min-height: 100vh;
         justify-content: space-between;
     }
-
+    
     .container-fluid {
         background-color: white;
     }
-
+    
     .flex-container {
         display: flex;
         background-color: white;
     }
-
+    
     span {
         color: #000000 !important;
     }
-
+    
     .adminNav {
         background-color: #0D9C4A;
-       
-      
-       
-        
     }
-
+    
     .sideNav {
         display: flex;
         flex-wrap: wrap;
@@ -55,133 +51,122 @@
         background-color: white;
         flex-direction: column;
     }
-
+    
     .wrapper {
         background-color: white;
         color: #000000;
     }
-
+    
     .sideNavItem {
         border-style: groove;
         border-color: #FFDD00;
         background-color: #FFDD00;
         width: 90px;
     }
-
+    
     .nav-link {
         color: #000000;
     }
-
+    
     .createButton {
         color: #000000;
         background-color: #FFDD00;
         height: 25px;
     }
-
+    
     th {
         color: #000000;
-
-
     }
-
+    
     .link {
         color: #000000;
     }
-
+    
     .deleteButton {
         background-color: #FFDD00;
         color: #000000;
-
     }
-
+    
     .deleteCartButton {
         background-color: #FFDD00;
         color: #000000;
     }
-
+    
     .modifyButton {
         background-color: #FFDD00;
         color: #000000;
     }
-
+    
     .checkOutForm {
         background-color: white;
     }
-
+    
     .updateCartButton {
         background-color: #FFDD00;
         color: #000000;
     }
-
+    
     td {
         color: #000000;
-
-
-
-
     }
-
+    
     table {
         margin-left: 25px;
         margin-top: 50px;
-
-
-
     }
-
+    
     form {
-        background-color: #0D9C4A;
+        background-color: white;
         position: static;
         margin-left: 45%;
         margin-top: 5%;
     }
-
+    
     .formDeleteButtonAdminPanel {
         background-color: white;
         margin-left: 0;
         margin-top: 0;
     }
-
-
+    
     .formDeleteProductAdmin {
         margin-left: auto;
         margin-top: auto;
         background-color: white;
     }
-
+    
     .formDeleteAdminProductButton {
         background-color: red;
         margin-left: auto;
         margin-top: auto;
     }
-
+    
     .sendEmailForm {
         background-color: white;
         margin-left: 0;
         margin-top: 0;
     }
-
+    
     .navBarLogo {
         width: 200px;
         height: 100px;
     }
-
+    
     .navBarTop {
         background-color: #0D9C4A;
     }
-
+    
     label {
         color: #000000;
     }
-
+    
     .pageTitle {
         margin-bottom: 0rem;
     }
-
+    
     .fileInput {
         color: #000000;
     }
-
+    
     .contactDetails {
         background-color: #000000;
         color: white;
@@ -190,17 +175,17 @@
         bottom: 40px;
         margin-bottom: 0rem;
     }
-
+    
     ul {
         position: static;
     }
-
+    
     p {
         background-color: white;
         color: #000000;
         margin-bottom: 0rem;
     }
-
+    
     ul {
         list-style-type: none;
         margin: 0;
@@ -209,28 +194,28 @@
         overflow: hidden;
         background-color: #0D9C4A;
     }
-
+    
     li {
         float: left;
     }
-
+    
     .navBarLinks {
         display: block;
         padding: 5px;
         background-color: #0D9C4A;
         color: #000000;
     }
-
+    
     .text-center {
         background-color: #000000;
         color: white;
         margin-bottom: 0rem;
     }
-
+    
     .footerLink {
         color: #FFDD00;
     }
-
+    
     .footer-bottom {
         position: static;
         left: 0;
@@ -238,79 +223,77 @@
         width: 100%;
         text-align: center;
     }
-
+    
     .adminLoginLabel {
         text-align: left;
     }
-
+    
     .adminLoginForm {
         background-color: white;
     }
-
+    
     .btn {
         background-color: #FFDD00;
         color: #000000;
     }
-
+    
     .news-page {
         background-color: #0D9C4A;
     }
-
+    
     .card {
         background-color: white;
         width: 25%;
         flex-direction: row;
         color: #000000;
     }
-
+    
     .imageHeight {
         height: 402px;
     }
-
+    
     .rowProduct {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-
+    
     .productImage {
         width: 65%;
         height: 45%;
     }
-
     /** below code used for footer  **/
-
+    
     * {
         margin: 0;
         padding: 0;
     }
-
+    
     .form-groupNameAndEmail {
         width: 25%;
     }
-
+    
     .form-groupMessage {
         width: 50%;
     }
-
+    
     html,
     body,
     form {
         height: 100%;
     }
-
+    
     #main {
         overflow: auto;
         padding-bottom: 100px;
     }
-
+    
     .footer {
         position: relative;
         margin-top: -100px;
         clear: both;
     }
-
     /*
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
