@@ -28,37 +28,36 @@
             @endcomponent
             <div class="flex-container col-md-8">
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">
-                        <h4 class="card-title">Pages</h4>
-                        <p>{{$totalPages}}</p>
+                        <h4 class="cardTitleDashboard">Pages</h4>
+                        <p class="adminDashboardCount">{{$totalPages}}</p>
                 </div>
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">Products</h4>
-                    <p>{{$totalProducts}}</p>
+                    <h4 class="cardTitleDashboard">Products</h4>
+                    <p class="adminDashboardCount">{{$totalProducts}}</p>
                 </div>
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">Navigation Bar Options</h4>
-                    <p>{{$totalNavs}}</p>
+                    <h4 class="cardTitleDashboard">Navigation Bar Options</h4>
+                    <p class="adminDashboardCount">{{$totalNavs}}</p>
                 </div>
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">Side Navigation Bar Option</h4>
-                    <p>{{$totalSideNavs}}</p>
+                    <h4 class="cardTitleDashboard">Side Navigation Bar Option</h4>
+                    <p class="adminDashboardCount">{{$totalSideNavs}}</p>
                 </div>
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">Services</h4>
-                    <p>{{$totalServices}}</p>
+                    <h4 class="cardTitleDashboard">Services</h4>
+                    <p class="adminDashboardCount">{{$totalServices}}</p>
                 </div>
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">News</h4>
-                    <p>{{$totalNews}}</p>
+                    <h4 class="cardTitleDashboard">News</h4>
+                    <p class="adminDashboardCount">{{$totalNews}}</p>
                 </div>
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">Admins</h4>
-                    <p>{{$totalAdmins}}</p>
+                    <h4 class="cardTitleDashboard">Admins</h4>
+                    <p class="adminDashboardCount">{{$totalAdmins}}</p>
                 </div>
                 <div class="card-body-admin-dashboard">
-                    <h4 class="card-title">Admin Side Navigation Bar Option</h4>
-                    <p>{{$totalAdminSideNavs}}</p>
+                    <h4 class="cardTitleDashboard">Admin Side Navigation Bar Option</h4>
+                    <p class="adminDashboardCount">{{$totalAdminSideNavs}}</p>
                 </div>
             </div>
         </div>
