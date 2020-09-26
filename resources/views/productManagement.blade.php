@@ -58,18 +58,11 @@
                         <td> <button type="submit" class="btn btn-danger">Delete</button></td>
                     </form>
                     </td>
-
-                    <td>
-
-
-
-
-                        </form>
-                    </td>
                 </tr>
                 @endforeach
             </table>
-            <button type="button" class="btn btn-success" style="height:40px">Add New</button>
+            <a class="createButton" href="{{url('createProduct')}}" class="btn btn-primary"> <button type="button"
+                    class="btn btn-success" style="height:40px">Add New</button></a>
         </div>
     </div>
 </body>
