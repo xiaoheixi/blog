@@ -48,27 +48,28 @@
 
 
 
-                    <td><a href="/product/{{ $product->name }}/edit"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Update</button></td> <br>
+                    <td><a href="/product/{{ $product->name }}/edit"><button type="button" class="btn btn-info"
+                                data-toggle="modal" data-target="#myModal">Update</button></td> <br>
 
                     <form class="formDeleteButtonAdminPanel" action="/product/{{ $product->name }}" method="post">
-                            @csrf
-                            @method('DELETE')
+                        @csrf
+                        @method('DELETE')
 
-                   <td> <button type="submit" class="btn btn-danger">Delete</button></td>
-                   </form>
+                        <td> <button type="submit" class="btn btn-danger">Delete</button></td>
+                    </form>
                     </td>
 
                     <td>
 
 
-                        
-                        
+
+
                         </form>
                     </td>
                 </tr>
                 @endforeach
             </table>
-            <button type="button" class="btnCreateProduct">Add New</button>
+            <button type="button" class="btn btn-success" style="height:40px">Add New</button>
         </div>
     </div>
 </body>
