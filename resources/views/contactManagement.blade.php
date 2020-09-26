@@ -41,21 +41,19 @@
                     <td>{{$contact->contactPostal}}</td>
                     <td>{{$contact->contactAddress}}</td>
                     <td>{{$contact->contactEmail}}</td>
-                    <td><a href="/contact/{{ $contact->contactName }}/edit"><button
-                                class="modifyButton">Modify</button></a></td>
-                    <td>
-                        <form class="formDeleteButtonAdminPanel" action="/contact/{{ $contact->contactName }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button class="deleteButton">Delete</button>
-                        </form>
-                    </td>
-                </tr>
-                @endforeach
-            </table>
-            <a class="createButton" href="{{url('createContact')}}" class="btn btn-primary"><button
-                    class="createButton">Add
-                    New</button></a>
+                    <td><a href="/contact/{{ $contact->contactName }}/edit"><button type="button" class="btn btn-info"
+                        data-toggle="modal" data-target="#myModal">Update</button></td> <br>
+            <form class="formDeleteButtonAdminPanel" action="/contact/{{ $contact->contactName }}" method="post">
+                @csrf
+                @method('DELETE')
+                <td> <button type="submit" class="btn btn-danger">Delete</button></td>
+            </form>
+            </td>
+        </tr>
+        @endforeach
+    </table>
+    <a class="createButton" href="{{url('createContact')}}" class="btn btn-primary"> <button type="button"
+            class="btn btn-success" style="height:40px">Add New</button></a>
         </div>
     </div>
 </body>

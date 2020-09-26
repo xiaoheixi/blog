@@ -37,19 +37,19 @@
                     <td>{{$news->newsName}}</td>
                     <td>{{$news->newsDescription}}</td>
                     <td>{{$news->newsLink}}</td>
-                    <td><a href="/news/{{ $news->newsName }}/edit"><button class="modifyButton">Modify</button></a></td>
-                    <td>
-                        <form class="formDeleteButtonAdminPanel" action="/news/{{ $news->newsName }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button class="deleteButton">Delete</button>
-                        </form>
-                    </td>
-                </tr>
-                @endforeach
-            </table>
-            <a class="createButton" href="{{url('createNews')}}" class="btn btn-primary"><button
-                    class="createButton">Add New</button></a>
+                    <td><a href="/news/{{ $news->newsName }}/edit"><button type="button" class="btn btn-info"
+                        data-toggle="modal" data-target="#myModal">Update</button></td> <br>
+            <form class="formDeleteButtonAdminPanel" action="/news/{{ $news->newsName }}" method="post">
+                @csrf
+                @method('DELETE')
+                <td> <button type="submit" class="btn btn-danger">Delete</button></td>
+            </form>
+            </td>
+        </tr>
+        @endforeach
+    </table>
+    <a class="createButton" href="{{url('createNews')}}" class="btn btn-primary"> <button type="button"
+            class="btn btn-success" style="height:40px">Add New</button></a>
         </div>
     </div>
 </body>

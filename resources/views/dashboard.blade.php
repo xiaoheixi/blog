@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="rowTitle">
             <h1>Welcome to the Admin Dashboard</h1>
         </div>
         <div class="row">

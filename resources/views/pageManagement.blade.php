@@ -24,31 +24,30 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="table table-bordered" style="width:75%">
+            <table class="table table-bordered" style="width:76%">
                 <tr>
                     <th>Title</th>
                     <th>URI</th>
-                    <th>Modify</th>
+                    <th>Update</th>
                     <th>Delete</th>
                 </tr>
                 @foreach($pages as $page)
                 <tr>
                     <td><a class="link" href="/page/{{ $page->URI }}">{{$page->title}}</a></td>
                     <td><a class="link" href="/page/{{ $page->URI }}">{{$page->URI}}</td>
-                    <td><a class="link" href="/page/{{ $page->URI }}/edit"><button
-                                class="modifyButton">Modify</button></a></td>
-                    <td>
-                        <form class="formDeleteButtonAdminPanel" action="/page/{{ $page->URI }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button class="deleteButton">Delete</button>
-                        </form>
-                    </td>
+                        <td><a href="/page/{{ $page->URI }}/edit"><button type="button" class="btn btn-info"
+                            data-toggle="modal" data-target="#myModal">Update</button></td> <br>
+                <form class="formDeleteButtonAdminPanel" action="/page/{{ $page->URI }}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <td> <button type="submit" class="btn btn-danger">Delete</button></td>
+                </form>
+                </td>
                 </tr>
                 @endforeach
             </table>
-            <a class="createButton" href="{{url('createPage')}}" class="btn btn-primary"><button
-                    class="createButton">Add New</button></a>
+            <a class="createButton" href="{{url('createPage')}}" class="btn btn-primary"> <button type="button"
+                class="btn btn-success" style="height:40px">Add New</button></a>
         </div>
     </div>
 </body>

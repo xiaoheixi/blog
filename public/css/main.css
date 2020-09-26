@@ -40,6 +40,7 @@
     
     .adminNav {
         background-color: #0D9C4A;
+        margin-bottom: 0;
     }
     
     .sideNav {
@@ -250,6 +251,10 @@
     
     .imageHeight {
         height: 402px;
+    }
+    
+    .rowTitle {
+        background-color: #0D9C4A;
     }
     
     .rowProduct {

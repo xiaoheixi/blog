@@ -40,20 +40,19 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td><a href="/radio/{{ $radio->fileName }}/edit"><button class="modifyButton">Modify</button></a>
-                    </td>
-                    <td>
-                        <form class="formDeleteButtonAdminPanel" action="/radio/{{ $radio->fileName }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button class="deleteButton">Delete</button>
-                        </form>
-                    </td>
-                </tr>
-                @endforeach
-            </table>
-            <a class="createButton" href="{{url('createRadio')}}" class="btn btn-primary"><button
-                    class="createButton">Add New</button></a>
+                    <td><a href="/radio/{{ $radio->fileName }}/edit"><button type="button" class="btn btn-info"
+                        data-toggle="modal" data-target="#myModal">Update</button></td> <br>
+            <form class="formDeleteButtonAdminPanel" action="/radio/{{ $radio->fileName }}" method="post">
+                @csrf
+                @method('DELETE')
+                <td> <button type="submit" class="btn btn-danger">Delete</button></td>
+            </form>
+            </td>
+        </tr>
+        @endforeach
+    </table>
+    <a class="createButton" href="{{url('createRadio')}}" class="btn btn-primary"> <button type="button"
+            class="btn btn-success" style="height:40px">Add New</button></a>
         </div>
     </div>
 </body>
