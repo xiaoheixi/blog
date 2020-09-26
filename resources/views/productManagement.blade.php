@@ -24,7 +24,7 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="tableProduct table-bordered" style="width:76%">
+            <table class="tableProduct table-bordered" style="width:1%">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
@@ -34,7 +34,6 @@
                     <th>Link</th>
                     <th>Update</th>
                     <th>Delete</th>
-
                 </tr>
                 @foreach($productContent as $product)
                 <tr>
@@ -45,16 +44,11 @@
                     </td>
                     <td>{{$product->type}}</td>
                     <td>{{$product->productLink}}</td>
-
-
-
                     <td><a href="/product/{{ $product->name }}/edit"><button type="button" class="btn btn-info"
                                 data-toggle="modal" data-target="#myModal">Update</button></td> <br>
-
                     <form class="formDeleteButtonAdminPanel" action="/product/{{ $product->name }}" method="post">
                         @csrf
                         @method('DELETE')
-
                         <td> <button type="submit" class="btn btn-danger">Delete</button></td>
                     </form>
                     </td>
@@ -68,17 +62,3 @@
 </body>
 
 </html>
-
-
-
-<!--
-
-<td><a href="/product/{{ $product->name }}/edit"><button class="modifyButton">Modify</button></a>
-                    </td>
-                    <td>
-                        <form class="formDeleteButtonAdminPanel" action="/product/{{ $product->name }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button class="deleteButton">Delete</button>
-                        </form>
-!-->
