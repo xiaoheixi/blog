@@ -76,6 +76,8 @@
     
     th {
         color: #000000;
+     
+
     }
     
     .link {
@@ -85,6 +87,7 @@
     .deleteButton {
         background-color: #FFDD00;
         color: #000000;
+        
     }
     
     .deleteCartButton {
@@ -106,13 +109,20 @@
     
     td {
         color: #000000;
+       
+      
+        
+     
     }
     
     table {
         margin-left: 25px;
         margin-top: 50px;
+      
+      
+      
     }
-    
+
     form {
         background-color: #0D9C4A;
         position: static;
@@ -124,6 +134,24 @@
         background-color: white;
         margin-left: 0;
         margin-top: 0;
+    }
+.btnCreateProduct{
+    height: 40px;
+    background-color: #0D9C4A;
+    color: black;
+}
+   
+
+    .formDeleteProductAdmin {
+        margin-left: auto;
+        margin-top: auto;
+        background-color: white;
+    }
+
+    .formDeleteAdminProductButton {
+        background-color: red;
+        margin-left: auto;
+        margin-top: auto;
     }
     
     .sendEmailForm {
