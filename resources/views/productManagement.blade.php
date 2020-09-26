@@ -24,7 +24,7 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="tableProduct table-bordered" style="width:76%">
+            <table class="tableProduct table-bordered" style="width:1%">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
@@ -43,7 +43,7 @@
                     <td><img src="{{ $product->cover_img }}" class="img-thumbnail" width="75" />{{$product->cover_img}}
                     </td>
                     <td>{{$product->type}}</td>
-                    <td>{{$product->productLink}}</td>
+                    <td class="productLink">{{$product->productLink}}</td>
                     <td><a href="/product/{{ $product->name }}/edit"><button type="button" class="btn btn-info"
                                 data-toggle="modal" data-target="#myModal">Update</button></td> <br>
                     <form class="formDeleteButtonAdminPanel" action="/product/{{ $product->name }}" method="post">

@@ -24,7 +24,7 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="table table-bordered" style="width:76%">
+            <table class="table table-bordered" style="width:1%">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
@@ -36,7 +36,7 @@
                 <tr>
                     <td>{{$service->serviceName}}</td>
                     <td>{{$service->serviceDescription}}</td>
-                    <td>{{$service->serviceLink}}</td>
+                    <td class="serviceLink">{{$service->serviceLink}}</td>
                     <td><a href="/service/{{ $service->serviceName }}/edit"><button type="button" class="btn btn-info"
                         data-toggle="modal" data-target="#myModal">Update</button></td> <br>
             <form class="formDeleteButtonAdminPanel" action="/service/{{ $service->serviceName }}" method="post">

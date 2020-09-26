@@ -8,6 +8,7 @@
         background-color: #0D9C4A;
         color: #000000;
         text-align: center;
+        margin-bottom: 0px !important;
     }
     
     .card-body-admin-dashboard {
@@ -15,6 +16,14 @@
         width: 200px;
         height: 160px;
         color: #000000;
+    }
+    
+    .productLink {
+        font-size: 13px;
+    }
+    
+    .serviceLink {
+        font-size: 14px;
     }
     
     .cardTitleDashboard {
@@ -37,6 +46,7 @@
     
     .container-fluid {
         background-color: white;
+        padding-left: 0px !important;
     }
     
     .flex-container {
