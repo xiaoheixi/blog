@@ -24,7 +24,7 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-            <table class="table table-bordered" style="width:1%">
+            <table class="table table-bordered" style="width:75%">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
