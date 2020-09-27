@@ -297,6 +297,7 @@
         width: 25%;
         flex-direction: row;
         color: #000000;
+        height: 400px;
     }
 
     .imageHeight {
