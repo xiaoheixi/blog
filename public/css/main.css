@@ -11,6 +11,10 @@
         margin-bottom: 0px !important;
     }
 
+    .card-body {
+        text-align: center;
+    }
+
     .card-body-admin-dashboard {
         border: 5px solid #000000;
         width: 200px;
@@ -286,6 +290,7 @@
     .btn {
         background-color: #FFDD00;
         color: #000000;
+
     }
 
     .news-page {
