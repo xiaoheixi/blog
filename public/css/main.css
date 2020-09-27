@@ -157,6 +157,12 @@
         margin-top: 5%;
     }
 
+    .formPage {
+        background-color: white;
+        position: static;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
     .formDeleteButtonAdminPanel {
         background-color: white;
         margin-left: 0;

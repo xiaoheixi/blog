@@ -28,7 +28,7 @@
 <body>
 
     <h1 class="pageTitle">Fill in the form to edit a page below.</h1>
-    <form action="/page/{{ $pageContent->URI }}" method="post">
+    <form class="formPage" action="/page/{{ $pageContent->URI }}" method="post">
         @csrf
         @method('PATCH')
         <label for="title">Title:</label><br>

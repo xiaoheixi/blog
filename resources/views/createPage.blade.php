@@ -34,7 +34,7 @@
 <body>
     <div class="container-fluid">
         <h1 class="pageTitle">Fill in the form to add a page below.</h1>
-        <form action="/storePage" method="post">
+        <form class="formPage" action="/storePage" method="post">
             @csrf
             <div class="form-group">
                 <label for="title">Title:</label><br>
