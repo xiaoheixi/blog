@@ -3,6 +3,9 @@
 
 <head>
     <title>Add a Page!</title>
+    <script src="https://cdn.tiny.cloud/1/lromnhzlyl3po8kyws7tper1xt2cr675vxijebux47tufezs/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin" />
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,9 +23,9 @@
     <script type="text/javascript">
         tinymce.init({
             selector: '#pageContent',
-            body_class: 'my_class',
-            content_css: '/css/main.css',
-            inline: true
+            /* body_class: 'my_class',
+             content_css: '/css/main.css',
+             inline: true */
         });
 
     </script>
