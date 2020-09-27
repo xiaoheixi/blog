@@ -6,7 +6,7 @@
                 <h4 class="card-title">{{ $product->name }}</h4>
                 <p>{{ $product->description}}</p>
                 <img class="productImage" src="/{{ $product->cover_img}}" alt="{{ $product->cover_img }}"><br><br>
-                <p>${{ $product->price}}</p>
+                <p class="price">${{ $product->price}}</p>
                 <a href="{{ route('cart.add', $product->id) }}" class="btn btn-outline-warning">Add to Cart</a>
             </div>
         </div>
