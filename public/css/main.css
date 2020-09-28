@@ -293,6 +293,11 @@
 
     }
 
+    .btn-info {
+        background-color: #FFDD00 !important;
+        color: black !important;
+    }
+
     .news-page {
         background-color: #0D9C4A;
     }
