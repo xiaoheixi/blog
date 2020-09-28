@@ -9,7 +9,8 @@
         Email: {{$con->contactEmail}} <br>
         @endforeach
     </p>
-    <p class="text-center">&copy; {{$footer -> footerText}} | <a class="footerLink" href="{{$footer -> footerLink}}">
+    <p class="text-center">&copy; {{$footer -> footerText}} | <a class="footerLink" target="_blank"
+            href="{{$footer -> footerLink}}">
             {{$footer -> footerName}}</a> </p>
     @endforeach
 </footer>
