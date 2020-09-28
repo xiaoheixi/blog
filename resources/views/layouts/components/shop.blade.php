@@ -3,9 +3,9 @@
         @foreach ($allProducts as $product)
         <div class="card h-4 col-md-4">
             <div class="card-body">
+                <img class="productImage" src="/{{ $product->cover_img}}" alt="{{ $product->cover_img }}"><br><br>
                 <h4 class="card-title">{{ $product->name }}</h4>
                 <p>{{ $product->description}}</p>
-                <img class="productImage" src="/{{ $product->cover_img}}" alt="{{ $product->cover_img }}"><br><br>
                 <p class="price">${{ $product->price}}</p>
                 <a href="{{ route('cart.add', $product->id) }}" class="btn btn-outline-warning">Add to Cart</a>
             </div>
