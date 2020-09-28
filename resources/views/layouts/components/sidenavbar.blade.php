@@ -1,14 +1,13 @@
-
-       <ul class="sideNav flex-column col-md-2">
-
-
-    @foreach($sideNavContent as $sideNav)
-
-    <li class="sideNavItem">
-
-
-        <a class="nav-link @if($loop->first) active @endif"
-            href="{!!$sideNav->sideNavLink!!}">{!!$sideNav->sideNavName!!}</a>
-    </li>
-    @endforeach
-</ul>
+<div class="shop_header">
+    <div class='container margin-top-20'>
+        <div class="">
+            <ul class="shop_header_tab">
+                @foreach($sideNavContent as $sideNav)
+                <li>
+                    <a href="{!!$sideNav->sideNavLink!!}">{!!$sideNav->sideNavName!!}</a>
+                </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+</div>

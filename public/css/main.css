@@ -63,6 +63,7 @@
         padding-left: 0px !important;
         padding-right: 0px !important;
         overflow-x: hidden;
+
     }
 
     .flex-container {
@@ -247,7 +248,8 @@
         margin-right: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #0D9C4A;
+        /* do not use for shop nav bar
+        background-color: #0D9C4A; */
     }
 
     li {
@@ -360,4 +362,41 @@
         position: relative;
         margin-top: -100px;
         clear: both;
+    }
+
+
+
+    @media screen and (max-height: 450px) {
+        ..shop_header {
+            padding-top: 15px;
+        }
+
+        .shop_header a {
+            font-size: 18px;
+        }
+    }
+
+    .shop_header {
+        padding: 20px;
+        background: #0D9C4A;
+        padding-bottom: 5px;
+    }
+
+    .shop_header_tab li {
+        list-style: none;
+        display: inline-block;
+        background: #FFDD00;
+        padding: 5px 20px;
+        border: 5px double #000000;
+        margin-right: 25px;
+        transition: 0.5s;
+    }
+
+    .shop_header_tab li:hover {
+        background: #ccc;
+    }
+
+    .shop_header_tab li a {
+        text-decoration: none;
+        color: #000;
     }
