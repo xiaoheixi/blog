@@ -78,7 +78,7 @@
     }
 
     .adminNav {
-        background-color: #0D9C4A;
+        background-color: #000000;
         margin-bottom: 0;
     }
 
@@ -105,7 +105,7 @@
     }
 
     .nav-link {
-        color: #000000;
+        color: white;
     }
 
     .createButton {
@@ -230,6 +230,8 @@
         left: 5px;
         bottom: 40px;
         margin-bottom: 0rem;
+        font-size: .8em;
+        text-align: center;
     }
 
     ul {
@@ -250,10 +252,6 @@
         overflow: hidden;
         /* do not use for shop nav bar
         background-color: #0D9C4A; */
-    }
-
-    li {
-        float: left;
     }
 
     .navBarLinks {
@@ -309,7 +307,21 @@
         width: 25%;
         flex-direction: row;
         color: #000000;
-        height: 900px;
+        height: auto;
+    }
+    .cardServices {
+        background-color: white;
+        width: 25%;
+        flex-direction: row;
+        color: #000000;
+        height: auto;
+    }
+    .cardNews {
+        background-color: white;
+        width: 25%;
+        flex-direction: row;
+        color: #000000;
+        height: auto;
     }
 
     .imageHeight {

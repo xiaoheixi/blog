@@ -1,9 +1,9 @@
 <div class="container-fluid">
     <div class="row">
         @foreach ($allProducts as $product)
-        <div class="card h-4 col-md-4">
+        <div class="card col-md-4">
             <div class="card-body">
-                <img class="productImage" src="/{{ $product->cover_img}}" alt="{{ $product->cover_img }}"><br><br>
+                <img class="productImage" src="/{{ $product->cover_img}}" alt="{{ $product->cover_img }}">
                 <h4 class="card-title">{{ $product->name }}</h4>
                 <p>{{ $product->description}}</p>
                 <p class="price">${{ $product->price}}</p>

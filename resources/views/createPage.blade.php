@@ -4,10 +4,9 @@
 <head>
     <title>Add a Page!</title>
     <script src="https://cdn.tiny.cloud/1/lromnhzlyl3po8kyws7tper1xt2cr675vxijebux47tufezs/tinymce/5/tinymce.min.js"
-        referrerpolicy="origin" />
+        referrerpolicy="origin">
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
