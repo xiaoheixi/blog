@@ -1,0 +1,56 @@
+/* confused for footter been used 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+
+.container {
+    padding-top: 180px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+
+}
+
+form {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.a width: 50px;
+}
+
+
+
+
+
+/* Set a style for the submit button 
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+*/
