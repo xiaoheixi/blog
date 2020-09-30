@@ -3,6 +3,7 @@
 
 <head>
     <title>Administrator Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -23,30 +24,30 @@
         <div class="row">
             @component('layouts.components.adminSideNavBar')
             @endcomponent
-                <table class="table table-bordered" style="width:76%">
-                    <tr>
-                        <th>Admin Name</th>
-                        <th>Admin Email</th>
-                        <th>Modify</th>
-                        <th>Delete</th>
-                    </tr>
-                    @foreach($adminContent as $admin)
-                    <tr>
-                        <td>{{$admin->name}}</td>
-                        <td>{{$admin->email}}</td>
-                        <td><a href="/admin/{{ $admin->name }}/edit"><button type="button" class="btn btn-info"
-                            data-toggle="modal" data-target="#myModal">Update</button></td> <br>
-                <form class="formDeleteButtonAdminPanel" action="/admin/{{ $admin->name }}" method="post">
-                    @csrf
-                    @method('DELETE')
-                    <td> <button type="submit" class="btn btn-danger">Delete</button></td>
-                </form>
-                </td>
-            </tr>
-            @endforeach
-        </table>
-        <a class="createButton" href="{{url('createAdmin')}}" class="btn btn-primary"> <button type="button"
-                class="btn btn-success" style="height:40px">Add New</button></a>
+            <table class="table table-bordered" style="width:76%">
+                <tr>
+                    <th>Admin Name</th>
+                    <th>Admin Email</th>
+                    <th>Modify</th>
+                    <th>Delete</th>
+                </tr>
+                @foreach($adminContent as $admin)
+                <tr>
+                    <td>{{$admin->name}}</td>
+                    <td>{{$admin->email}}</td>
+                    <td><a href="/admin/{{ $admin->name }}/edit"><button type="button" class="btn btn-info"
+                                data-toggle="modal" data-target="#myModal">Update</button></td> <br>
+                    <form class="formDeleteButtonAdminPanel" action="/admin/{{ $admin->name }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <td> <button type="submit" class="btn btn-danger">Delete</button></td>
+                    </form>
+                    </td>
+                </tr>
+                @endforeach
+            </table>
+            <a class="createButton" href="{{url('createAdmin')}}" class="btn btn-primary"> <button type="button"
+                    class="btn btn-success" style="height:40px">Add New</button></a>
         </div>
     </div>
 </body>
