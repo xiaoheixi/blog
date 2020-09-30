@@ -17,6 +17,7 @@ class SendEmailController extends Controller
         $obj = \App\Product::where('name', $request->name);
         $data = array(
             'name' => $request->name,
+            'email' => $request->email,
             'message' => $request->message,
         );
         Mail::to('aleksanderhowell@gmail.com')->send(new SendMail($data));
